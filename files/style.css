@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1d2379;
+  position: absolute;
+  background-image: url("Ellipse 18.png");
+  background-repeat: no-repeat;
+}
+
+.heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  position: relative;
+  align-self: flex-start;
+  color: #fff;
+  font-weight: 600;
+  padding-top: 20px;
+  margin: 1px 20px;
+}
+
+.menu-box {
+  position: relative;
+  padding: 0 0;
+  margin: 0 30px;
+  display: flex;
+  align-self: flex-end;
+  width: 35px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid #1d2379;
+}
+
+.menu-bar {
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px, rgb(243, 246, 243);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-bar::before,
+.menu-bar::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2.5px, green;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-bar::before {
+  transform: translateY(-16px);
+}
+
+.menu-bar::after {
+  transform: translateY(16px);
+}
+
+.head-liner {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}
+
+h1 {
+  color: #7f89f3;
+  text-align: center;
+  margin-top: 90px;
+  font-size: 30px;
+}
+
+.title {
+  color: rgb(211, 202, 202);
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about {
+  color: rgb(200, 196, 196);
+  text-align: center;
+  margin: 40px 30px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.after-about {
+  content: '';
+  position: relative;
+  width: 90%;
+  height: 1.1px;
+  background-color: rgb(39, 42, 42);
+  color: rgb(5, 8, 46);
+  align-items: center;
+  left: 5%;
+}
+
+.languages-skills-frameworks {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  left: 10%;
+  background-image: url("Ellipse 19.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.languages {
+  flex: 1;
+  position: relative;
+}
+
+.skills {
+  flex: 1;
+  position: relative;
+}
+
+.frameworks {
+  flex: 1;
+  position: relative;
+}
+
+.word {
+  color: rgb(202, 205, 205);
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+span {
+  position: relative;
+  color: #7f89f3;
+  bottom: 10px;
+}
+
+.icon-work {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 30px;
+}
+
+.icon {
+  margin: 0 8px;
+}
+
+.work-down-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(163, 160, 234);
+}
