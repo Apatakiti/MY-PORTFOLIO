@@ -1,20 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
+ 
 .work {
   position: relative;
-  margin-top: 160%;
   background-image: url("Ellipse 19@2x.png");
   background-position: right;
+  margin-top: 20%;
 }
 
 .title-work {
   color: #413cc6;
   font-size: 150%;
   margin-left: 5%;
-  margin-bottom: 10%;
+
 }
 
 .line {
@@ -31,9 +27,8 @@
   background-color: rgb(243, 243, 243);
   min-height: 150px;
   min-width: 90%;
-  margin: 10% 0;
+  margin: 10% 5%;
   border: 1px solid #646369;
-  margin-left: 5%;
 }
 
 h3 {
@@ -42,6 +37,7 @@ h3 {
   margin-bottom: 8%;
   margin-left: 5%;
 }
+
 
 .text {
   color: rgb(227, 223, 223);
@@ -64,7 +60,7 @@ h3 {
   color: rgb(3, 3, 104);
   background-color: rgb(84, 89, 87);
   width: 0.5%;
-  height: 15%;
+  height: 40px;
   margin-left: 5%;
 }
 
@@ -78,22 +74,49 @@ h3 {
   margin-left: 5%;
 }
 
+.work {
+  display: grid;
+  grid-row: 2;
+}
+
+.work2 {
+  display: grid;
+  grid-row: 3;
+}
+
+.work3 {
+  display: grid;
+  grid-row: 4;
+}
+
+.work4 {
+  display: grid;
+  grid-row: 5;
+}
+
+.contact {
+  display: grid;
+  grid-row: 6;
+  margin-top: 30px;
+}
+
 .btn {
   background-color: blueviolet;
   width: 25%;
   margin-top: 10%;
   border: none;
   margin-left: 5%;
-  position: relative;
+
   font-size: 70%;
   height: 40px;
 }
 
-.title.contact {
+.conta {
   color: #4d4ab8;
   text-align: center;
   margin-left: -5%;
-  margin-top: 20%;
+  margin-top: 15%;
+  font-size: 200%;
 }
 
 .cont-text {
@@ -146,7 +169,6 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;
-  margin-top: 10%;
   list-style: none;
 }
 
@@ -168,7 +190,7 @@ h3 {
 
 .my-mail {
   color: white;
-  margin-left: 25%;
+  margin-left: 30%;
   margin-right: 25%;
-  margin-top: -23%;
-}
+  margin-top: -20px;
+} 
