@@ -1,7 +1,7 @@
  
 .work {
   position: relative;
-  background-image: url("Ellipse 19@2x.png");
+  
   background-position: right;
   margin-top: 20%;
 }
@@ -10,7 +10,7 @@
   color: #413cc6;
   font-size: 150%;
   margin-left: 5%;
-
+  margin-top: 80px;
 }
 
 .line {
@@ -20,6 +20,8 @@
   width: 90%;
   color: rgb(3, 3, 104);
   margin-left: 5%;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .image {
@@ -77,21 +79,25 @@ h3 {
 .work1 {
   display: grid;
   grid-row: 2;
+  background-image: url("Ellipse19@2x.png");
 }
 
 .work2 {
   display: grid;
   grid-row: 3;
+  background-image: url("Ellipse20@2x.png");
 }
 
 .work3 {
   display: grid;
   grid-row: 4;
+  background-image: url("Ellipse21@2x.png");
 }
 
 .work4 {
   display: grid;
   grid-row: 5;
+  background-image: url("Ellipse22@2x.png");
 }
 
 .contact {
