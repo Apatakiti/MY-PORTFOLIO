@@ -1,6 +1,5 @@
 .work {
   position: relative;
-  
   background-position: right;
   margin-top: 20%;
 }
@@ -38,7 +37,6 @@ h3 {
   margin-bottom: 8%;
   margin-left: 5%;
 }
-
 
 .text {
   color: rgb(227, 223, 223);
@@ -111,7 +109,6 @@ h3 {
   margin-top: 10%;
   border: none;
   margin-left: 5%;
-
   font-size: 70%;
   height: 40px;
 }
@@ -198,4 +195,4 @@ h3 {
   margin-left: 30%;
   margin-right: 25%;
   margin-top: -20px;
-} 
+}
