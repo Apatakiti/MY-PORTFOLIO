@@ -1,10 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
-}
-
-  box-sizing: border-box;
 }
 
 body {
@@ -22,8 +18,8 @@ body {
   flex-direction: row;
 }
 
-nav{
-  color:rgb(255, 255, 255);
+nav {
+  color: rgb(255, 255, 255);
   flex: 1;
   order: 2;
   align-items: center;
@@ -33,9 +29,9 @@ nav{
   top: 10px;
 }
 
-.logo{
+.logo {
   position: relative;
-  flex:1;
+  flex: 1;
   order: 1;
   color: #fff;
   font-weight: 600;
@@ -119,11 +115,11 @@ h1 {
   font-size: 13px;
 }
 
-li{
+li {
   list-style: none;
 }
 
-span {
+.group {
   position: relative;
   color: #7f89f3;
   bottom: 10px;
@@ -162,21 +158,14 @@ span {
   margin: 0 8px;
 }
 
-   .work-down-arrow {
-     display: flex; 
-     align-self: center;
-     color: rgb(163, 160, 234);
-     margin-left: -10%;
+.work-down-arrow {
+  display: flex;
+  align-self: center;
+  color: rgb(163, 160, 234);
+  margin-left: -10%;
 }
 
 .wor {
   text-align: center;
   padding-left: 60%;
-} 
-
-.work-down-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(163, 160, 234);
 }
