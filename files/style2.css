@@ -81,13 +81,12 @@ h3 {
 .btn {
   background-color: blueviolet;
   width: 25%;
-  margin-top: 10%; 
-  
+  margin-top: 10%;
   border: none;
   margin-left: 5%;
   position: relative;
   font-size: 70%;
-  height: 40px; 
+  height: 40px;
 }
 
 .title.contact {
@@ -123,14 +122,14 @@ h3 {
 }
 
 .btn-sec {
-    background-color: blueviolet;
-    width: 25%;
-    margin-top: 10%; 
-    border: none;
-    margin-left: 5%;
-    position: relative;
-    font-size: 70%;
-    height: 40px;
+  background-color: blueviolet;
+  width: 25%;
+  margin-top: 10%;
+  border: none;
+  margin-left: 5%;
+  position: relative;
+  font-size: 70%;
+  height: 40px;
 }
 
 .cont-line {
