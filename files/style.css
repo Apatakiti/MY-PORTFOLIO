@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+
 }
- 
+
+  box-sizing: border-box;
+}
+
 body {
   background: #1d2379;
   position: absolute;
@@ -164,7 +168,15 @@ span {
      color: rgb(163, 160, 234);
      margin-left: -10%;
 }
+
 .wor {
   text-align: center;
   padding-left: 60%;
 } 
+
+.work-down-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(163, 160, 234);
+}

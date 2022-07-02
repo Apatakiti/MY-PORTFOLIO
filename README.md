@@ -12,12 +12,10 @@
 ![Screenshot (347)](https://user-images.githubusercontent.com/96092850/177001997-0c59ef85-9831-4cfa-a40c-9a0236e86c04.png)
 
 
-
 ## Built With
 
 - HTML
 - CSS
-
 
 
 ## Author
