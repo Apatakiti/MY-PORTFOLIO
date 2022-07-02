@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-  grid-column:1 ;
+  grid-column: 1;
   color: aliceblue;
   color: #fff;
   font-weight: 600;
@@ -62,13 +62,12 @@ h1 {
   background-color: rgb(39, 42, 42);
   color: rgb(5, 8, 46);
   align-items: center;
-   margin-left: 5%;
+  margin-left: 5%;
 }
-
 
 .languages-skills-frameworks {
   position: relative;
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   margin-top: 50px;
@@ -150,7 +149,7 @@ li {
   color: rgb(163, 160, 234);
 }
 
-.icon{
+.icon {
   padding-left: 38%;
 }
 
