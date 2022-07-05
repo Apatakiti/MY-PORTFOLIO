@@ -1,18 +1,17 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-# A Portfolio Project
+# My Portfolio
 > Description the project.
 
-
-image
+![Screenshot (357)](https://user-images.githubusercontent.com/96092850/177422696-06002e82-a0cd-480d-a06f-4995140a9451.png)
+![Screenshot (358)](https://user-images.githubusercontent.com/96092850/177422714-bc22eaf5-df6e-403e-a723-68e683b07bbb.png)
 
 
 ## Built With
 
 - HTML
 - CSS
-
 
 
 ## Author
