@@ -1,0 +1,192 @@
+.title-work {
+  color: #413cc6;
+  font-size: 150%;
+  margin-left: 5%;
+  margin-top: 80px;
+}
+
+.line {
+  position: relative;
+  background-color: rgb(44, 43, 43);
+  height: 1px;
+  width: 90%;
+  color: rgb(3, 3, 104);
+  margin-left: 5%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.image {
+  position: relative;
+  background-color: rgb(243, 243, 243);
+  min-height: 150px;
+  min-width: 90%;
+  margin: 10% 5%;
+  border: 1px solid #646369;
+}
+
+h3 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8%;
+  margin-left: 5%;
+}
+
+.text {
+  color: rgb(227, 223, 223);
+  font-size: 103%;
+  margin-right: 5%;
+  line-height: 125%;
+  margin-left: 5%;
+}
+
+.skil {
+  position: relative;
+  display: flex;
+  margin-top: 10%;
+  height: 40%;
+  margin-left: 5%;
+}
+
+.vector {
+  position: relative;
+  color: rgb(3, 3, 104);
+  background-color: rgb(84, 89, 87);
+  width: 0.5%;
+  height: 40px;
+  margin-left: 5%;
+}
+
+.skill {
+  position: relative;
+  color: rgb(221, 219, 219);
+  list-style: none;
+  margin: 1% 4%;
+  text-align: center;
+  text-justify: center;
+  margin-left: 5%;
+}
+
+.work1 {
+  display: grid;
+  grid-row: 2;
+  background-image: url("Ellipse19@2x.png");
+}
+
+.work2 {
+  display: grid;
+  grid-row: 3;
+  background-image: url("Ellipse20@2x.png");
+}
+
+.work3 {
+  display: grid;
+  grid-row: 4;
+  background-image: url("Ellipse21@2x.png");
+}
+
+.work4 {
+  display: grid;
+  grid-row: 5;
+  background-image: url("Ellipse22@2x.png");
+}
+
+.contact {
+  display: grid;
+  grid-row: 6;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: blueviolet;
+  width: 25%;
+  margin-top: 10%;
+  border: none;
+  margin-left: 5%;
+  font-size: 70%;
+  height: 40px;
+}
+
+.conta {
+  color: #4d4ab8;
+  text-align: center;
+  margin-left: -5%;
+  margin-top: 15%;
+  font-size: 200%;
+}
+
+.cont-text {
+  color: rgb(227, 223, 223);
+  font-size: 103%;
+  margin: 5%;
+  line-height: 125%;
+  text-align: center;
+}
+
+.text-inp {
+  margin: 5%;
+  width: 90%;
+  height: 30px;
+}
+
+.email {
+  margin: 5%;
+  width: 90%;
+  height: 30px;
+}
+
+.send-text {
+  margin: 5%;
+  width: 90%;
+}
+
+.btn-sec {
+  background-color: blueviolet;
+  width: 25%;
+  margin-top: 10%;
+  border: none;
+  margin-left: 5%;
+  position: relative;
+  font-size: 70%;
+  height: 40px;
+}
+
+.cont-line {
+  position: relative;
+  background-color: rgb(82, 82, 82);
+  height: 2px;
+  width: 100%;
+  color: rgb(3, 3, 104);
+  margin-top: 15%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  list-style: none;
+}
+
+.github-icon {
+  margin: 0 8px;
+}
+
+.linkedIn--icon {
+  margin: 0 8px;
+}
+
+.peace-icon {
+  margin: 0 5px;
+}
+
+.twitter-icon {
+  margin: 0 1px;
+}
+
+.my-mail {
+  color: white;
+  margin-left: 30%;
+  margin-right: 25%;
+  margin-top: -20px;
+}

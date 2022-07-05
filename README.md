@@ -5,9 +5,7 @@
 > Description the project.
 
 
-![Screenshot (298)](https://user-images.githubusercontent.com/96092850/176784710-2d104970-2617-44c3-be48-4aa7c6e1747d.png)
-)
-![Screenshot (300)](https://user-images.githubusercontent.com/96092850/176784810-f42f9ed2-426a-4b4a-9408-39fda5b858c5.png)
+image
 
 
 ## Built With

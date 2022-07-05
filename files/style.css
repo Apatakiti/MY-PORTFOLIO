@@ -1,56 +1,41 @@
 * {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-  background: #1d2379;
-  position: absolute;
-  background-image: url("Ellipse 18.png");
-  background-repeat: no-repeat;
+  display: grid;
+  background-color: rgb(29, 29, 115);
+}
+
+.main-page {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.heading {
+header {
+  padding: 20px;
   position: relative;
-  display: flex;
-  flex-direction: row;
+  display: grid;
 }
 
-nav{
-  color:rgb(255, 255, 255);
-  flex: 1;
-  order: 2;
-  align-items: center;
-  position: relative;
-  font-size: 35px;
-  left: 100px;
-  top: 10px;
-}
-
-.logo{
-  position: relative;
-  flex:1;
-  order: 1;
+.logo {
+  grid-column: 1;
+  color: aliceblue;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
-  left: 20px;
-  top: 10px;
 }
 
-.head-liner {
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  width: 100%;
+nav {
+  grid-column: 2;
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: 0;
 }
 
 h1 {
   color: #7f89f3;
   text-align: center;
-  margin-top: 90px;
   font-size: 30px;
 }
 
@@ -77,7 +62,7 @@ h1 {
   background-color: rgb(39, 42, 42);
   color: rgb(5, 8, 46);
   align-items: center;
-  left: 5%;
+  margin-left: 5%;
 }
 
 .languages-skills-frameworks {
@@ -115,11 +100,11 @@ h1 {
   font-size: 13px;
 }
 
-li{
+li {
   list-style: none;
 }
 
-span {
+.group {
   position: relative;
   color: #7f89f3;
   bottom: 10px;
@@ -160,7 +145,15 @@ span {
 
 .work-down-arrow {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-self: center;
   color: rgb(163, 160, 234);
+}
+
+.icon {
+  padding-left: 38%;
+}
+
+.wor {
+  text-align: center;
+  margin-left: 10%;
 }
