@@ -1,0 +1,107 @@
+.contact {
+  display: grid;
+  margin-top: 30px;
+}
+
+
+.conta {
+  color: #4d4ab8;
+  text-align: center;
+  margin-left: -5%;
+  margin-top: 15%;
+  font-size: 200%;
+}
+
+.cont-text {
+  color: rgb(227, 223, 223);
+  font-size: 103%;
+  margin: 5%;
+  line-height: 125%;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.input-list * {
+  vertical-align: top;
+}
+
+label {
+  color: aliceblue;
+  margin-left: 5%;
+}
+
+#name {
+  width: 65%;
+  height: 30px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+#mail {
+  margin-left: 3.5%;
+  margin-bottom: 5%;
+  width: 65%;
+  height: 30px;
+}
+
+#msg {
+  margin-left: 0.46%;
+  margin-bottom: 5%;
+  width: 65%;
+}
+
+#bttn {
+  background-color: blueviolet;
+  width: 25%;
+  margin-top: 10%;
+  border: none;
+  margin-left: 5%;
+  position: relative;
+  font-size: 70%;
+  height: 40px;
+}
+
+.cont-line {
+  position: relative;
+  background-color: rgb(82, 82, 82);
+  height: 2px;
+  width: 100%;
+  color: rgb(3, 3, 104);
+  margin-top: 15%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  list-style: none;
+}
+
+.github-icon {
+  margin: 0 8px;
+}
+
+.linkedIn--icon {
+  margin: 0 8px;
+}
+
+.peace-icon {
+  margin: 0 5px;
+}
+
+.twitter-icon {
+  margin: 0 1px;
+}
+
+.my-mail {
+  color: white;
+  margin-left: 30%;
+  margin-right: 25%;
+  margin-top: -20px;
+}
