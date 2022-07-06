@@ -7,7 +7,7 @@
 
 .line {
   position: relative;
-  background-color: rgb(44, 43, 43);
+  background-color: rgb(39, 42, 42);
   height: 1px;
   width: 90%;
   color: rgb(3, 3, 104);
@@ -92,7 +92,7 @@ h3 {
 }
 
 .btn {
-  background-color: blueviolet;
+  background-color: #9390FF;
   width: 25%;
   margin-top: 10%;
   border: none;
