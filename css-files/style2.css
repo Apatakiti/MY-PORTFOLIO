@@ -7,7 +7,7 @@
 
 .line {
   position: relative;
-  background-color: rgb(44, 43, 43);
+  background-color: rgb(39, 42, 42);
   height: 1px;
   width: 90%;
   color: rgb(3, 3, 104);
@@ -91,102 +91,12 @@ h3 {
   background-image: url("Ellipse22@2x.png");
 }
 
-.contact {
-  display: grid;
-  grid-row: 6;
-  margin-top: 30px;
-}
-
 .btn {
-  background-color: blueviolet;
+  background-color: #9390FF;
   width: 25%;
   margin-top: 10%;
   border: none;
   margin-left: 5%;
   font-size: 70%;
   height: 40px;
-}
-
-.conta {
-  color: #4d4ab8;
-  text-align: center;
-  margin-left: -5%;
-  margin-top: 15%;
-  font-size: 200%;
-}
-
-.cont-text {
-  color: rgb(227, 223, 223);
-  font-size: 103%;
-  margin: 5%;
-  line-height: 125%;
-  text-align: center;
-}
-
-.text-inp {
-  margin: 5%;
-  width: 90%;
-  height: 30px;
-}
-
-.email {
-  margin: 5%;
-  width: 90%;
-  height: 30px;
-}
-
-.send-text {
-  margin: 5%;
-  width: 90%;
-}
-
-.btn-sec {
-  background-color: blueviolet;
-  width: 25%;
-  margin-top: 10%;
-  border: none;
-  margin-left: 5%;
-  position: relative;
-  font-size: 70%;
-  height: 40px;
-}
-
-.cont-line {
-  position: relative;
-  background-color: rgb(82, 82, 82);
-  height: 2px;
-  width: 100%;
-  color: rgb(3, 3, 104);
-  margin-top: 15%;
-}
-
-.icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  list-style: none;
-}
-
-.github-icon {
-  margin: 0 8px;
-}
-
-.linkedIn--icon {
-  margin: 0 8px;
-}
-
-.peace-icon {
-  margin: 0 5px;
-}
-
-.twitter-icon {
-  margin: 0 1px;
-}
-
-.my-mail {
-  color: white;
-  margin-left: 30%;
-  margin-right: 25%;
-  margin-top: -20px;
 }
