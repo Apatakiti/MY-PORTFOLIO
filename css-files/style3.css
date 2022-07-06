@@ -1,6 +1,7 @@
 .contact {
   display: flex;
   flex-direction: column;
+  display: grid;
   margin-top: 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -53,6 +54,10 @@ form {
   width: 100px;
   margin-top: 10%;
   border: none;
+  width: 25%;
+  margin-top: 10%;
+  border: none;
+  margin-left: 38%;
   font-size: 70%;
   height: 40px;
 }
@@ -70,6 +75,9 @@ form {
 }
 
 .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   list-style: none;
 }
@@ -94,4 +102,7 @@ form {
   color: white;
   text-align: center;
   padding-bottom: 10px;
+  margin-left: 30%;
+  margin-right: 25%;
+  margin-top: -20px;
 }
