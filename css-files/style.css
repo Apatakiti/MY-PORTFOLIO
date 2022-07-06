@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
 }
- 
+
 body {
   position: relative;
   display: grid;
-  background-color: rgb(29, 29, 115);
+  background-color: #0c03b8;
   margin: 0;
   padding: 5px;
 }
