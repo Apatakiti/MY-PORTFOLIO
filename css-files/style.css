@@ -113,14 +113,18 @@ li {
 }
 
 .icon-work {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  position: absolute;
+  float: left;
 }
 
 .icons {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  position: absolute;
+  float: left;
   color: white;
   margin: 30px;
 }
