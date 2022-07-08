@@ -26,6 +26,7 @@ header {
   color: #fff;
   font-weight: 600;
   text-decoration: none;
+  background-color: white;
 }
 
 nav {
@@ -39,6 +40,7 @@ h1 {
   color: #7f89f3;
   text-align: center;
   font-size: 30px;
+  font-weight: 500;
 }
 
 .title {
