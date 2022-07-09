@@ -8,7 +8,7 @@
   body {
     position: relative;
     display: grid;
-    background-color: rgb(29, 29, 115);
+    background-color: #191765;
     margin: 0;
     box-sizing: content-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -72,7 +72,7 @@
     position: relative;
     width: 90%;
     height: 1.1px;
-    background-color: rgb(39, 42, 42);
+    background-color: #3a3837;
     color: rgb(5, 8, 46);
     align-items: center;
     margin-left: 5%;
@@ -193,7 +193,7 @@
     background-color: rgb(39, 42, 42);
     height: 1px;
     width: 90%;
-    color: rgb(3, 3, 104);
+    color: #3a3837;
     margin-left: 5%;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -234,7 +234,7 @@
   .vector {
     position: relative;
     color: rgb(3, 3, 104);
-    background-color: rgb(84, 89, 87);
+    background-color: #3a3837;
     width: 0.5%;
     height: 40px;
     margin-left: 5%;
@@ -266,6 +266,7 @@
 
   .btn {
     background-color: #9390ff;
+    color: #fff;
     width: 25%;
     margin-top: 10%;
     border: none;
@@ -310,11 +311,30 @@
     padding: 5%;
   }
 
+  ::placeholder {
+    color: #3a3837;
+    opacity: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  :-ms-input-placeholder {
+    color: #3a3837;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  input:focus,
+  textarea:focus {
+    color: #191765;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
   #name {
     width: 90%;
     height: 30px;
     margin-left: 5%;
     margin-bottom: 5%;
+    font-size: 17px;
   }
 
   #mail {
@@ -322,16 +342,19 @@
     margin-bottom: 5%;
     width: 90%;
     height: 30px;
+    font-size: 17px;
   }
 
   #msg {
     margin-left: 5%;
     margin-bottom: 5%;
     width: 90%;
+    font-size: 17px;
   }
 
   #bttn {
     background-color: #9390ff;
+    color: #fff;
     position: relative;
     width: 25%;
     margin-top: 10%;
@@ -355,12 +378,13 @@
     justify-content: center;
     color: white;
     list-style: none;
+    margin-top: 10px;
   }
 
   .my-mail {
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 15px;
   }
 
