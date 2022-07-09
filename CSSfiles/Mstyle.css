@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+.title {
+  animation: change-color 2s ease infinite alternate;
+}
+
+@keyframes change-color {
+  0% {
+    color: rgb(211, 202, 202);
+  }
+
+  100% {
+    color: #d2320a;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     position: relative;
