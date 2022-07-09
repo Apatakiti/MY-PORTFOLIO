@@ -5,7 +5,6 @@
 > Description the project.
 
 
-image
 
 
 ## Built With
