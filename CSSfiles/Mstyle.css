@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+.title {
+  animation: change-color 2s ease infinite alternate;
+}
+
+@keyframes change-color {
+  0% {
+    color: rgb(211, 202, 202);
+  }
+
+  100% {
+    color: #d2320a;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     position: relative;
@@ -51,6 +65,28 @@
     color: #7f89f3;
     text-align: center;
     font-size: 30px;
+    position: relative;
+    animation: joker 1s ease infinite alternate;
+  }
+  
+  @keyframes joker {
+    0%   {
+      background-color:#7f89f3; 
+      
+    }
+    25%  {
+      background-color:yellow; 
+    }
+    50%  {
+      background-color:blue; 
+      font-size: 50px;
+    }
+    75%  {
+      background-color:green; 
+    }
+    100% {
+      background-color:red; 
+    }
   }
 
   .title {
