@@ -15,7 +15,6 @@
     display: grid;
     position: relative;
     padding: 1% 10%;
-    background-image: url(1625800867380.jpg);
   }
 
   .heading-Mob {
@@ -61,6 +60,7 @@
   .heading-liner {
     display: flex;
     flex-direction: column;
+    background-image: url(/images/left-skills.png);
   }
 
   .intro {
