@@ -87,9 +87,9 @@
     align-items: center;
     justify-content: center;
     left: 10%;
-    background-image: url("Ellipse 19.png");
+    background-image: url();
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
   }
 
   .languages {
