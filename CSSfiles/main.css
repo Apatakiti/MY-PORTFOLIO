@@ -77,8 +77,7 @@
     opacity: 0;
   }
   .pop-up {
-    display: -ms-grid;
-    display: grid;
+    display: none;
   }
   .pop-up .pop-head {
     -ms-grid-row: 1;
