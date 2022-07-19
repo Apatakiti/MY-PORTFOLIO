@@ -29,6 +29,48 @@ function switching() {
               }
             })
             
+            
+            const portf = document.getElementsByClassName("port")
+           
+            portf[0].addEventListener('click', function() {
+                console.log('love!!!')      
+        
+                    for (var i = 0; i < pop.length; i++ ) {
+                        page[i].style.display = "grid"
+
+                      for (var i = 0; i < page.length; i++ ) {
+                       pop[i].style.display = "none"
+                     }
+                  }
+                })
+
+              const about = document.getElementsByClassName("abou")
+
+                about[0].addEventListener('click', function() {
+                    console.log('love!!!')      
+            
+                        for (var i = 0; i < pop.length; i++ ) {
+                            page[i].style.display = "grid"
+    
+                          for (var i = 0; i < page.length; i++ ) {
+                           pop[i].style.display = "none"
+                         }
+                      }
+                    })
+                    
+                    const contac = document.getElementsByClassName("con")
+
+                    contac[0].addEventListener('click', function() {
+                        console.log('love!!!')      
+                
+                            for (var i = 0; i < pop.length; i++ ) {
+                                page[i].style.display = "grid"
+        
+                              for (var i = 0; i < page.length; i++ ) {
+                               pop[i].style.display = "none"
+                             }
+                          }
+                        })
  }
 
  switching();
