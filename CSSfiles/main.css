@@ -625,6 +625,10 @@
     position: relative;
     margin-left: auto;
   }
+  
+  .pop-up {
+    display: none;
+  }
 
   .D-portfolio,
   .D-about,
