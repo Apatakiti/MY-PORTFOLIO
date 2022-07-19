@@ -5,34 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ademomla's Portfolio</title>
-    <link rel="stylesheet" href="CSSfiles/Mstyle.css">
-    <link rel="stylesheet" href="CSSfiles/Dstyle.css">
+    <link rel="stylesheet" href="CSSfiles/main.css">
     <script src="https://kit.fontawesome.com/e4fb871c71.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <section class="main-page">
+      <section class="pop-up" style="display: none;">
+        <header class="pop-head">
+            <div class="line-one">
 
+            <a href="index.html" class="lo">.</a>
+          <nav class="nav2">
+            <button class="hamburger is-active">
+				<div class="bar"></div>
+			</button>      
+          </nav>
+        </div>
+
+          <div class="linkss">
+              <div class="each-link">
+            <a href="#wrks" class="links port">Portfolio</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="each-link">
+            <a href="#abt" class="links abou" >about</a>
+            <i class="fa-solid fa-chevron-right"></i>
+           </div>
+
+            <div class="each-link">
+            <a href="#contac" class="links con" >contact</a>
+            <i class="fa-solid fa-chevron-right"></i>
+           </div>
+
+          </div>
+
+
+        </header>
+        <div class="lor">.</div>
+       </section>
+<!--  -->
+
+<section class="real-page">
+
+    <section class="main-page">
        <header class="heading-Mob">
+
             <a href="index.html" class="logo">RITE</a>
-           <nav>
-              <i class="fa-solid fa-bars"></i>
-          </nav> 
+
+          <nav class="nav1">
+            <button class="hamburger">
+				<div class="bar"></div>
+            </button>
+          </nav>
        </header>
+         
 
     <header class="heading-Des">
         <a href="index.html" class="logo-D">RITE</a>
         <div class="D-nav">
-            <a href=".recent" class="D-portfolio">Portfolio</a>
-            <a href=".intro" class="D-about">about</a>
-            <a href=".contact" class="D-contact">contact</a>
+            <a href="#wrks" class="D-portfolio">Portfolio</a>
+            <a href="#abt" class="D-about">about</a>
+            <a href="#ct" class="D-contact">contact</a>
             <a href="https://twitter.com/steady1700" class="D-envelop"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </header>
     
         <div class="head-liner-Mob">
-        <h1 class="intro">ADEMOLA OWOEYE</h1>
+        <h1 id="abt" class="intro">ADEMOLA OWOEYE</h1>
         <P class="title"> Software Developer </P>
         <p class="about">
             I can help you build a product. feature or website look through some of my work and experience! if you like what you see and have a project you need coded, don't hestiate to contact me.
@@ -121,8 +162,8 @@
              </div> 
     </div>  
 </section>
-
-   <section class="work">
+<!--  -->
+   <section id="wrks" class="work">
         <div class="title-work">
      <h2 class="recent"> MY RECENT </h2>
      <h2> WORK</h2>
@@ -247,6 +288,7 @@
         <div class="story-D">
     <h3>Multi-Post Stories</h3>
     <p class="text"> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
+
  <ul class="skil">
     <li class="skill">css</li>
     <li class="vector">.</li>
@@ -256,6 +298,7 @@
     <li class="vector">.</li>
     <li class="skill">ruby</li>
  </ul>
+
     <button class="btn" type="button"> See Project </button>
              </div>
  </div> 
@@ -282,8 +325,9 @@
 </section>
 
  <section class="footer"> 
+
     <div class="contact-M">
-    <h2 class="conta">CONTACT US</h2>
+    <h2 id="contac" class="conta">CONTACT US</h2>
 <p class="cont-text">
     if you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it
 </p>
@@ -317,8 +361,10 @@
 
     </div>
 
-    <div class="contact-D">
-        <h2 class="conta">Let's chat!</h2>
+    <div  class="contact-D">
+
+        <h2 id="ct" class="conta">Let's chat!</h2>
+
     <p class="cont-text">
         if you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it
     </p>
@@ -341,7 +387,7 @@
    </div>
 </section> 
 
-<div class="feet">
+<div class="feet" style="display: none;">
 <ul class="icons">
         <li class="github-icon">
     <i class="fa-brands fa-github"><a href="https://github.com/Ademola-coding"></a></i></li>
@@ -358,5 +404,8 @@
     </ul>
    
 </div>
+
+</section>
+<script src="app.js"></script>
 </body>
 </html>
