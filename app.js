@@ -60,6 +60,29 @@ function switching() {
       }
     }
   });
+
+
+const projbtn = document.getElementsByClassName('btn');
+const thePop = document.getElementsByClassName('the-pop-up')
+const blurs = document.getElementById('blur')
+const xmark = document.getElementById('x-mark')
+
+projbtn[0].addEventListener('click', function() {
+    
+    for (let i = 0; i < thePop.length; i += 1) {
+          thePop[i].style.display = 'grid';    
+    }
+    
+    blurs.style.filter = "blur(800px)";
+})
+
+xmark.addEventListener('click', function() {
+    for (let i = 0; i < thePop.length; i += 1) {
+        thePop[i].style.display = 'none';    
+  }
+  blurs.style.filter = "blur(0px)"
+})
+
 }
 
 switching();
