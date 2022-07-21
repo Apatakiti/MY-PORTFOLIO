@@ -130,9 +130,6 @@ const popUpDatas = [
   },
 ];
 
-// const fillData = ({
-//   name, description, featuredImage, technologies,
-// }) => {
 function fillData({
   name, description, featuredImage, technologies,
 }) {
