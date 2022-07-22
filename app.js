@@ -181,7 +181,11 @@ for (let i = 0; i < projbtnD.length; i += 1) {
   projbtnD[i].addEventListener('click', () => {
     for (let i = 0; i < thePopD.length; i += 1) {
       thePopD[i].style.display = 'grid';
-      blurs.style.filter = 'blur(500px)';
+      blurs.style.filter = 'blur(200px)';
+
+      for (let i = 0; i < thePop.length; i += 1) {
+        thePop[i].style.display = 'none';
+      }
 
       xmarkD.addEventListener('click', () => {
         for (let i = 0; i < thePopD.length; i += 1) {

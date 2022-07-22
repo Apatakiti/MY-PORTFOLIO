@@ -8,7 +8,7 @@
   body {
     position: relative;
     display: grid;
-    background-color: #191765;
+    background-color: #161451;
     margin: 0;
     box-sizing: content-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -25,7 +25,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.51);
+    background-color: rgba(255, 255, 255, 0.16);
     height: 100%;
     border: 2px rgba(213, 204, 204, 0.765) solid;
     transition: all 1s ease-in-out;
@@ -613,14 +613,14 @@
   .the-pop-upD {
     display: none;
     position: fixed;
+    height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.51);
-    margin: 0.6% 10%;
-    height: 100%;
+    z-index: 100;
     border: 2px rgba(213, 204, 204, 0.765) solid;
     transition: all 1s ease-in-out;
-    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.285);
+    margin: 0.6% 10%;
 
     #x-markD {
       display: flex;
@@ -648,6 +648,33 @@
       padding-top: 0.5%;
       padding-left: 4%;
       padding-right: 4%;
+    }
+
+    .backgimage {
+      position: absolute;
+      left: -10%;
+      top: 5%;
+      z-index: -100;
+      filter: blur(20px) brightness(90%);
+
+      img {
+        height: 50%;
+        width: 50%;
+      }
+    }
+
+    .backgimg {
+      position: absolute;
+      right: -30%;
+      top: 40%;
+      left: auto;
+      z-index: -100;
+      filter: blur(20px) brightness(90%);
+
+      img {
+        height: 50%;
+        width: 50%;
+      }
     }
 
     .descriptionD {
@@ -716,7 +743,7 @@
       }
     }
   }
-
+  //  }
   .main-page {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
