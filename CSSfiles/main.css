@@ -8,7 +8,7 @@
 @media (max-width: 768px) {
   body {
     position: relative;
-    display: -ms-grid;
+    /* display: -ms-grid; */
     display: grid;
     background-color: #161451;
     margin: 0;
