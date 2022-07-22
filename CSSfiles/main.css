@@ -8,6 +8,7 @@
 @media (max-width: 768px) {
   body {
     position: relative;
+
     /* display: -ms-grid; */
     display: grid;
     background-color: #161451;
@@ -82,6 +83,7 @@
   .the-pop-up .skiil {
     padding: 0 5%;
     position: relative;
+
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -142,6 +144,7 @@
   .heading-Mob {
     padding: 20px;
     position: relative;
+
     /* display: -ms-grid; */
     display: grid;
   }
@@ -213,6 +216,7 @@
     -ms-grid-row: 1;
     grid-row: 1;
     position: relative;
+
     /* display: -ms-grid; */
     display: grid;
     background-image: url("/images/pop-background1.png");
@@ -227,6 +231,7 @@
     position: relative;
     -ms-grid-column: 1;
     grid-column: 1;
+
     /* display: -ms-grid; */
     display: grid;
     margin: 5%;
@@ -247,6 +252,7 @@
 
   .pop-up .pop-head .linkss {
     /* display: -webkit-box; */
+
     /* display: -ms-flexbox; */
     display: flex;
     -webkit-box-orient: vertical;
@@ -259,6 +265,7 @@
 
   .pop-up .pop-head .linkss .each-link {
     position: relative;
+
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -335,8 +342,10 @@
 
   .languages-skills-frameworks {
     position: relative;
+
     /* display: -ms-grid; */
     display: grid;
+
     /* -ms-grid-columns: (1fr) [2]; */
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
@@ -502,6 +511,7 @@
 
   .skil {
     position: relative;
+
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -689,6 +699,7 @@
 @media screen and (min-width: 768px) {
   body {
     position: relative;
+
     /* display: -ms-grid; */
     display: grid;
     background-color: #191765;
@@ -808,6 +819,7 @@
 
   .the-pop-upD .skillingD .skiil2 {
     position: relative;
+
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -973,6 +985,7 @@
 
   .languages-skills-frameworks {
     position: relative;
+
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -1111,6 +1124,7 @@
   .wor-icon1 {
     -ms-grid-column: 1;
     grid-column: 1;
+
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -1123,6 +1137,7 @@
   .icons {
     -ms-grid-column: 2;
     grid-column: 2;
+
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -1141,6 +1156,7 @@
   .wor-icon2 {
     -ms-grid-column: 3;
     grid-column: 3;
+
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -1283,6 +1299,7 @@
 
   .skill {
     position: relative;
+
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -1331,6 +1348,7 @@
 
   form {
     /* display: -webkit-box; */
+
     /* display: -ms-flexbox; */
     display: flex;
     -webkit-box-orient: vertical;
