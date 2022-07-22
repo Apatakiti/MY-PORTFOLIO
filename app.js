@@ -236,8 +236,6 @@ subBtn.addEventListener('click', (event) => {
   }
 });
 
-
-
 const emailsD = document.forms[1].elements[1];
 const subBtnD = document.querySelector('button.bomD');
 const errMsgD = document.querySelector('form > .errmsgD');
