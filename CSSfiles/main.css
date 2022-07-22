@@ -17,6 +17,10 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
+  .the-pop-upD {
+    display: none;
+  }
+
   .the-pop-up {
     display: none;
     position: fixed;
@@ -139,7 +143,8 @@
   .heading-Mob {
     padding: 20px;
     position: relative;
-    display: -ms-grid;
+
+    /* display: -ms-grid; */
     display: grid;
   }
 
@@ -210,8 +215,7 @@
     -ms-grid-row: 1;
     grid-row: 1;
     position: relative;
-
-    /* display: -ms-grid; */
+    display: -ms-grid;
     display: grid;
     background-image: url("/images/pop-background1.png");
     background-repeat: no-repeat;
@@ -225,8 +229,7 @@
     position: relative;
     -ms-grid-column: 1;
     grid-column: 1;
-
-    /* display: -ms-grid; */
+    display: -ms-grid;
     display: grid;
     margin: 5%;
   }
@@ -692,7 +695,8 @@
 @media screen and (min-width: 768px) {
   body {
     position: relative;
-    display: -ms-grid;
+
+    /* display: -ms-grid; */
     display: grid;
     background-color: #191765;
     margin: 0;
@@ -701,11 +705,15 @@
 
   .the-pop-up {
     display: none;
+  }
+
+  .the-pop-upD {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.51);
-    margin: 1% 4%;
+    margin: 0.6% 10%;
     height: 100%;
     border: 2px rgba(213, 204, 204, 0.765) solid;
     -webkit-transition: all 1s ease-in-out;
@@ -713,7 +721,7 @@
     z-index: 100;
   }
 
-  .the-pop-up #x-mark {
+  .the-pop-upD #x-markD {
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -723,19 +731,19 @@
     flex-direction: row;
     justify-self: flex-end;
     color: #fff;
-    margin-top: 1%;
+    margin-top: 0.5%;
     margin-right: 4%;
     font-size: x-large;
   }
 
-  .the-pop-up .p-topic {
+  .the-pop-upD .p-topicD {
     position: relative;
     color: #fcfcfc;
     padding: 0 4%;
-    font-size: 4vh;
+    font-size: 3vh;
   }
 
-  .the-pop-up .snapshoot {
+  .the-pop-upD .snapshootD {
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -743,46 +751,60 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-flex: 0.1;
-    -ms-flex: 0.1 0.1 0;
-    flex: 0.1 0.1 0;
     justify-self: center;
     width: 100%;
-    height: 50%;
-    padding: 0 4%;
+    height: 80%;
+    padding-top: 0.5%;
+    padding-left: 4%;
+    padding-right: 4%;
   }
 
-  .the-pop-up .description {
+  .the-pop-upD .descriptionD {
     position: relative;
     color: rgba(252, 252, 252, 0.611);
     padding: 0 4%;
     text-align: center;
-    margin-top: -30%;
+    margin-top: -8.3%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 2vh;
   }
 
-  .the-pop-up .skiil {
-    padding: 0 5%;
+  .the-pop-upD .skillingD {
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .the-pop-upD .skillingD .skiil2 {
     position: relative;
 
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
-    margin-top: -26%;
-    height: 40%;
-    margin-left: 5%;
+    margin-top: 0.5%;
+    height: 30%;
+    width: 44%;
   }
 
-  .the-pop-up .skiil .vecto {
+  .the-pop-upD .skillingD .skiil2 .vecto2 {
     position: relative;
     color: rgba(255, 255, 255, 0.51);
     background-color: rgba(228, 226, 226, 0.51);
     width: 0.5%;
-    height: 40px;
+    height: 30px;
     margin: 0 6%;
   }
 
-  .the-pop-up .btncontainer {
+  .the-pop-upD .btncontainerD {
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -793,25 +815,25 @@
     justify-items: center;
     margin-bottom: 0;
     margin-left: 30%;
-    margin-top: -22%;
+    margin-top: 0.5%;
   }
 
-  .the-pop-up .btncontainer .bt1 {
+  .the-pop-upD .btncontainerD .bt1D {
     background-color: #9390ff;
     color: #fff;
     width: 20%;
-    margin-top: 1%;
+    margin-top: 0.5%;
     border: none;
     margin-left: 5%;
     font-size: 70%;
     height: 40px;
   }
 
-  .the-pop-up .btncontainer .bt2 {
+  .the-pop-upD .btncontainerD .bt2D {
     background-color: #9390ff;
     color: #fff;
     width: 25%;
-    margin-top: 1%;
+    margin-top: 0.5%;
     border: none;
     margin-left: 5%;
     font-size: 70%;
@@ -1369,7 +1391,7 @@
   }
 
   .feet {
-    display: -ms-grid;
+    /* display: -ms-grid; */
     display: grid;
     margin: 2% 0;
   }
