@@ -235,3 +235,18 @@ subBtn.addEventListener('click', (event) => {
     errMsg.textContent = 'kindly enter lowerCase character in the email field!';
   }
 });
+
+
+
+const emailsD = document.forms[1].elements[1];
+const subBtnD = document.querySelector('button.bomD');
+const errMsgD = document.querySelector('form > .errmsgD');
+
+subBtnD.addEventListener('click', (event) => {
+  const { value } = emailsD;
+  if (value !== value.toLowerCase()) {
+    event.preventDefault();
+
+    errMsgD.textContent = 'kindly enter lowerCase character in the email field!';
+  }
+});
