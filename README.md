@@ -37,6 +37,10 @@ you can have a copy of this project by cloning this repo to your local machine
  
 with the steps above, you can have a copy of the project 
 
+### Prerequisite
+
+- **Web Browser**
+
 ## Authors
 
 👤 **Ademola Owoeye**
