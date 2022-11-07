@@ -220,3 +220,31 @@ for (let i = 0; i < projbtnD.length; i += 1) {
     fillData2(popUpDatasD[i]);
   });
 }
+
+// form validation
+
+const emails = document.forms[0].elements[1];
+const subBtn = document.querySelector('button.bom');
+const errMsg = document.querySelector('form > .errmsg');
+
+subBtn.addEventListener('click', (event) => {
+  const { value } = emails;
+  if (value !== value.toLowerCase()) {
+    event.preventDefault();
+
+    errMsg.textContent = 'kindly enter lowerCase character in the email field!';
+  }
+});
+
+const emailsD = document.forms[1].elements[1];
+const subBtnD = document.querySelector('button.bomD');
+const errMsgD = document.querySelector('form > .errmsgD');
+
+subBtnD.addEventListener('click', (event) => {
+  const { value } = emailsD;
+  if (value !== value.toLowerCase()) {
+    event.preventDefault();
+
+    errMsgD.textContent = 'kindly enter lowerCase character in the email field!';
+  }
+});
