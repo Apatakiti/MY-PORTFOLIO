@@ -5,30 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ademomla's Portfolio</title>
-    <link rel="stylesheet" href="./css-files/style.css">
-    <link rel="stylesheet" href="./css-files/style2.css">
-    <link rel="stylesheet" href="./css-files/style3.css">
+    <link rel="stylesheet" href="CSSfiles/main.css">
     <script src="https://kit.fontawesome.com/e4fb871c71.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+
+    <!-- pop up for mobile -->
+
+    <section class="the-pop-up" id="poped">
+
+     <span id="x-mark"> <i class="fa-solid fa-x"></i> </span>
+     <!-- <span id="x-markD"> <i class="fa-solid fa-x"></i> </span> -->
+
+     <h2 class="p-topic">Multi-Post Stories </h2>
+     <img class="snapshoot"  src="images/pop-up.png" alt="pop-up snapshoot">
+     <p class="description"> default </p>
+     
+     <div class="skilling">
+     <ul class="skiil" id="ski">
+         <li class="vecto">.</li> 
+         <li class ="skill">default</li>
+         <li class="vecto">.</li>
+         <li class ="skill"> default</li>
+         <li class="vecto">.</li>
+         <li class ="skill">default</li>
+         <li class="vecto">.</li>
+      </ul>
+    </div>
+
+     <div class="btncontainer">
+         <button class="bt1"  type="button"> 
+             See live<span> <i class="fa-solid fa-up-right-from-square"></i> </span>
+         </button>
+      <button  class="bt2" type="button">
+           See Project
+            <i class="fa-brands fa-github"></i>
+         </button>
+      </div>
+ </section>
+
+ <!-- pop up for desktop -->
+
+ <section class="the-pop-upD" id="popedD">
+     <!-- <div class="pop-container"> -->
+    <span id="x-markD"> <i class="fa-solid fa-x"></i> </span>
+
+    <h2 class=" p-topicD">default</h2>
+
+    <img class="snapshootD"  src="images/pop-upD.png" alt="pop-up snapshoot">
+    <div class="backgimage"><img src="images/circle1x.png" alt="backimg"></div>
+    <div class="backgimg"><img src="images/circle2.png" alt="backimg"></div>
+    
+    <p class="descriptionD">default</p>
+
+   <div class="skillingD">
+       <ul class=" skiil2">
+           <li class=" vecto2">.</li>
+           <li class=" skill2">default</li>  
+           <li class=" vecto2">.</li>
+           <li class=" skill2">default</li>
+           <li class=" vecto2">.</li>
+           <li class=" skill2">default</li>
+           <li class=" vecto2">.</li>
+           <li class=" skill2">default</li>
+           <li class=" vecto2">.</li>
+        </ul>
+      </div>
+    <div class="btncontainerD">
+        <button class="bt1D"  type="button"> 
+            See live<span> <i class="fa-solid fa-up-right-from-square"></i> </span>
+        </button>
+     <button  class="bt2D" type="button">
+          See Project
+           <i class="fa-brands fa-github"></i>
+        </button>
+     </div>
+    <!-- </div> -->
+</section>
+
+
+
+   <!-- The menu section -->
+	   <div class="pop-up" id="pops">
+        <div class="pop-head">
+            <div class="line-one">
+            <a href="index.html" class="lo">.</a>
+          <nav class="nav2">
+            <button class="hamburger is-active" type="button">
+                <span class="bar"></span>
+            </button>      
+          </nav>
+        </div>
+          <div class="linkss">
+              <div class="each-link">
+            <a href="#wrks" class="links port">Portfolio</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="each-link">
+            <a href="#abt" class="links abou" >about</a>
+            <i class="fa-solid fa-chevron-right"></i>
+           </div>
+            <div class="each-link">
+            <a href="#contac" class="links con" >contact</a>
+            <i class="fa-solid fa-chevron-right"></i>
+           </div>
+          </div>
+
+        </div>
+        <div class="lor">.</div>
+       </div>
+
+<div class="real-page" id="blur">
+
     <section class="main-page">
+       <header class="heading-Mob">
 
-    <header class="heading"><a href="index.html" class="logo">RITE</a>
-        <nav><i class="fa-solid fa-bars"></i></nav>  
+            <a href="index.html" class="logo">RITE</a>
+
+          <nav class="nav1">
+            <button class="hamburger" type="button">
+				<span class="bar"></span>
+            </button>
+          </nav>
+       </header>
+         
+
+    <header class="heading-Des">
+        <a href="index.html" class="logo-D">RITE</a>
+        <div class="D-nav">
+            <a href="#wrks" class="D-portfolio">Portfolio</a>
+            <a href="#abt" class="D-about">about</a>
+            <a href="#ct" class="D-contact">contact</a>
+            <a href="https://twitter.com/steady1700" class="D-envelop"><i class="fa-solid fa-envelope"></i></a>
+        </div>
     </header>
-
-    <div class="head-liner">
-        <h1>ADEMOLA OWOEYE</h1>
+    
+        <div class="head-liner-Mob">
+        <h2 id="abt" class="intro">ADEMOLA OWOEYE</h2>
         <P class="title"> Software Developer </P>
         <p class="about">
             I can help you build a product. feature or website look through some of my work and experience! if you like what you see and have a project you need coded, don't hestiate to contact me.
         </p>        
 
-        <div class="after-about">
-            .
-        </div>
+        <div class="after-about">.</div> 
 
         <div class="languages-skills-frameworks">
             <ul class="languages">
@@ -57,11 +178,9 @@
             </ul>
          </div>
 
-
             <div class="after-about">
                 .
-            </div>
-
+            </div> 
             
             <div class="icon-work">
                 <ul class="icons">
@@ -80,32 +199,127 @@
 
                 <div class="work-down-arrow"> 
                 <div class="icon">
-                    <i class="fa-solid fa-arrow-down"></i>
+                    <i class="fa-solid fa-arrow-down" ></i>
                     </div>
                    <div class="wor"> work </div> 
                  </div> 
-    </div>            
+                 <div class="work-down-arrow-D"> 
+                    <div class="wor-icon1">
+                    <div class="icon1">
+                        <i class="fa-solid fa-arrow-down" ></i>
+                    </div><div class="wor1"> work </div>
+                </div>
+
+                    <ul class="icons">
+                        <li class="github-icon">
+                    <i class="fa-brands fa-github"></i></li>
+                    <li class="linkedIn-icon">
+                    <i class="fa-brands fa-linkedin-in"></i> </li>
+                    <li class="peace-icon">
+                    <i class="fa-solid fa-hand-peace"></i></li>
+                    <li class="twitter-icon">
+                    <i class="fa-brands fa-twitter"></i></li>
+                    <li class="M-icon">
+                    <i class="fa-solid fa-m"></i></li>
+                    </ul>
+
+                    <div class="wor-icon2">
+                    <div class="wor2"> work </div>
+                    <div class="icon2">
+                         <i class="fa-solid fa-arrow-down" ></i>
+                    </div>
+                </div>
+             </div> 
+    </div>  
 </section>
-        
 
+   <section id="wrks" class="work">
+        <div class="title-work">
+     <h2 class="recent"> MY RECENT </h2>
+     <h2> WORK</h2>
+    </div>
+     <div class="title-work-D">
+        <h2 class="recent"> My recent work </h2>
+       </div> 
+       <div class="line">.</div>
 
+   <div class="work-M"> 
+        <div class="image"> </div>
+        <h3>Multi-Post Stories</h3>
+        <p class="text">  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
+     
+     <ul class="skil">
+        <li class="skill">css</li>
+        <li class="vector">.</li>
+        <li class="skill">html</li>
+        <li class="vector">.</li>
+        <li class="skill">bootstrap</li>
+        <li class="vector">.</li>
+        <li class="skill">ruby</li>
+     </ul>
 
-<div class="work1">
-      
-    <div class="title-work">
-     <h2 class="recent">MY RECENT</h2>
-     <h2> WORK </h2>
+     <button class="btn" type="button" > See Project  </button>
     </div>
 
-    <div class="line">.</div>
- 
-   <div class="image"> </div>
+    <div class="work-M"> 
+        <div class="image"> </div>
+        <h3>Multi-Post Stories</h3>
+        <p class="text">  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
+     <ul class="skil">
+        <li class="skill">css</li>
+        <li class="vector">.</li>
+        <li class="skill">html</li>
+        <li class="vector">.</li>
+        <li class="skill">bootstrap</li>
+        <li class="vector">.</li>
+        <li class="skill">ruby</li>
+     </ul>
 
+     <button class="btn" type="button" > See Project  </button>
+     
+    </div>
 
+    <div class="work-M"> 
+        <div class="image"> </div>
+        <h3>Multi-Post Stories</h3>
+        <p class="text">  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
+     <ul class="skil">
+        <li class="skill">css</li>
+        <li class="vector">.</li>
+        <li class="skill">html</li>
+        <li class="vector">.</li>
+        <li class="skill">bootstrap</li>
+        <li class="vector">.</li>
+        <li class="skill">ruby</li>
+     </ul>
+     <button class="btn" type="button" > See Project  </button>
+    </div>
+
+    <div class="work-M"> 
+        <div class="image"> </div>
+        <h3>Multi-Post Stories</h3>
+        <p class="text">  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
+     <ul class="skil">
+        <li class="skill">css</li>
+        <li class="vector">.</li>
+        <li class="skill">html</li>
+        <li class="vector">.</li>
+        <li class="skill">bootstrap</li>
+        <li class="vector">.</li>
+        <li class="skill">ruby</li>
+     </ul>
+
+     <button class="btn" type="button" > See Project  </button>
+    </div>
+
+<div class="work1-D">
+
+   <div class="image"> 
+       <img src="/images/white-img.png" alt="white image">
+    </div>
+       <div class="story-D">
    <h3>Multi-Post Stories</h3>
-
-   <p class="text">  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
-
+   <p class="text"> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
 <ul class="skil">
    <li class="skill">css</li>
    <li class="vector">.</li>
@@ -115,41 +329,18 @@
    <li class="vector">.</li>
    <li class="skill">ruby</li>
 </ul>
-
-   <button class="btn" type="button"> See Project </button>
-
+<button class="btn D" type="button" > See Project  </button>
+            </div>
 </div> 
 
-<div class="work2">
+<div class="work2-D">
+    <div class="image2"> 
+        <img src="/images/white-img.png" alt="white image">
+     </div>
  
-    <div class="image"> </div>
-
-   <h3>Multi-Post Stories</h3>
-
-   <p class="text">  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
-
-<ul class="skil">
-   <li class="skill">css</li>
-   <li class="vector">.</li>
-   <li class="skill">html</li>
-   <li class="vector">.</li>
-   <li class="skill">bootstrap</li>
-   <li class="vector">.</li>
-   <li class="skill">ruby</li>
-</ul>
-
-   <button class="btn btn-p" type="button">  See Project </button>
-
-</div> 
- 
-<div class="work3">
- 
-    <div class="image"> </div>
- 
+        <div class="story-D-2">
     <h3>Multi-Post Stories</h3>
- 
     <p class="text">  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
- 
  <ul class="skil">
     <li class="skill">css</li>
     <li class="vector">.</li>
@@ -159,19 +350,18 @@
     <li class="vector">.</li>
     <li class="skill">ruby</li>
  </ul>
- 
-    <button class="btn" type="button" > See Project </button>
-  
-</div> 
+ <button class="btn D" type="button" > See Project  </button>
+             </div>
+ </div> 
 
- <div class="work4">
- 
-    <div class="image"> </div>
- 
+ <div class="work1-D">
+    <div class="image"> 
+        <img src="/images/white-img.png" alt="white image">
+     </div>
+        <div class="story-D">
     <h3>Multi-Post Stories</h3>
- 
-    <p class="text">  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
- 
+    <p class="text"> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
+
  <ul class="skil">
     <li class="skill">css</li>
     <li class="vector">.</li>
@@ -181,46 +371,53 @@
     <li class="vector">.</li>
     <li class="skill">ruby</li>
  </ul>
+
+ <button class="btn D" type="button">See Project</button>
+             </div>
+ </div> 
  
-    <button class="btn" type="button" >  See Project</button>
-  
-</div>
+ <div class="work2-D">
+     <div class="image2"> 
+         <img src="/images/white-img.png" alt="white image">
+      </div>
+         <div class="story-D-2">
+     <h3>Multi-Post Stories</h3>
+     <p class="text">  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
+  <ul class="skil">
+     <li class="skill">css</li>
+     <li class="vector">.</li>
+     <li class="skill">html</li>
+     <li class="vector">.</li>
+     <li class="skill">bootstrap</li>
+     <li class="vector">.</li>
+     <li class="skill">ruby</li>
+  </ul>
+  <button class="btn D" type="button" > See Project  </button>
+              </div>
+  </div> 
+</section>
 
  <section class="footer"> 
 
-    <div class="contact">
-
-    <h2 class="conta">CONTACT US</h2>
-
+    <div class="contact-M">
+    <h2 id="contac" class="conta">CONTACT US</h2>
 <p class="cont-text">
     if you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it
 </p>
-
-    <form action="https://formspree.io/f/mlezygyr" method="post">
-        
-         <div>    
-           <input type="text" id="name" name="user_name" placeholder="  Name" maxlength="30" required>
-         </div>
-         <div>
-          
+    <form action="https://formspree.io/f/mlezygyr" method="post">    
+           <input type="text" id="name" name="user_name" placeholder="  Name" maxlength="30" required>  
            <input type="email" id="mail" name="user_email" placeholder="  E-mail" required>
-         </div>
-         <div>
-           
            <textarea cols="33" rows="16"  id="msg" name="user_message" 
-           placeholder=" 
- Enter text here" maxlength="500" required ></textarea>
+           placeholder=" Enter text here" maxlength="500" required ></textarea>
+           <div class="button">
+             
+           <button type="submit" id="bttn" > see project </button>
          </div>
-         <div class="button">
-           <button type="submit" id="bttn"> see project </button>
-         </div>
-    
        </form>
-    </div>
 
        <div class="cont-line">.</div>
-
-<ul class="icons">
+       
+<ul class="icons-M">
     <li class="github-icon">
 <i class="fa-brands fa-github"><a href="https://github.com/Ademola-coding"></a></i></li>
 <li class="linkedIn-icon">
@@ -232,7 +429,56 @@
 <li class="M-icon">
 <i class="fa-solid fa-m"><a href="https://twitter.com/steady1700"></a></i></li>
 </ul>
+
 <div class="my-mail">emailhere@email.com</div>
+
+    </div>
+
+    <div  class="contact-D">
+
+        <h2 id="ct" class="conta">Let's chat!</h2>
+
+    <p class="cont-text">
+        if you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it
+    </p>
+        <form action="https://formspree.io/f/mlezygyr" method="post">        
+             
+               <input type="text" id="name-D" name="user_name" placeholder="  Name" maxlength="30" required>
+    
+               <input type="email" id="mail-D" name="user_email" placeholder="  Email Address" required>
+              
+               <textarea cols="33" rows="16"  id="msg-D" name="user_message" 
+               placeholder=" 
+  Write your message here" maxlength="500" required ></textarea>
+            
+             <div class="button">
+               <button type="submit" id="bttn-D"> send </button>
+             </div>
+           </form>
+
+           <div class="cont-line">.</div>
+   </div>
 </section> 
+
+<div class="feet">
+<ul class="icons">
+        <li class="github-icon">
+    <i class="fa-brands fa-github"><a href="https://github.com/Ademola-coding"></a></i></li>
+    <li class="linkedIn-icon">
+    <i class="fa-brands fa-linkedin-in"><a href="https://www.linkedin.com/resume-builder/urn:li:fs_memberResume:27973521/"></a></i> </li>
+    <li class="peace-icon">
+    <i class="fa-solid fa-hand-peace"><a href="https://www.linkedin.com/resume-builder/urn:li:fs_memberResume:27973521/"></a></i></li>
+    <li class="twitter-icon">
+    <i class="fa-brands fa-twitter"><a href="https://twitter.com/steady1700"></a></i></li>
+    <li class="M-icon">
+    <i class="fa-solid fa-m"><a href="https://twitter.com/steady1700"></a></i></li>
+
+     <li class="my-mail">emailhere@email.com</li>
+    </ul>
+   
+</div>
+
+</div>
+<script src="app.js"></script>
 </body>
 </html>
