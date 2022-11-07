@@ -2,6 +2,11 @@
 
 
 # Validation Contact
+
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# A Portfolio Project
+
 > Description the project.
 
 
@@ -10,6 +15,10 @@
 - HTML
 - CSS
 
+
+## Live Demo 
+
+[Live Demo Link](https://ademola-coding.github.io/MY-PORTFOLIO/)
 
 ## Author
 
@@ -24,6 +33,8 @@
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
 
 
 ## Show your support
@@ -40,5 +51,7 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./MIT.md) licensed.
 
+
 ### Live Demo
 https://ademola-coding.github.io/MY-PORTFOLIO/
+
