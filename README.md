@@ -43,9 +43,9 @@ with the steps above, you can have a copy of the project
 - LinkedIn: [Ademola Owoeye](https://www.linkedin.com/in/ademola-owoeye-0bb344223/)
 
 
-👤 **Getie Kumilechew**
+👤 **Kumilachew Getie**
 
-- GitHub: [@Ademola-coding](https://github.com/Ademola-coding)
+- GitHub: [@Kumilachew-g](https://github.com/Kumilachew-g)
 
 
 ## 🤝 Contributing
