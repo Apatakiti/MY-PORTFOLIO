@@ -9,7 +9,7 @@ This a portfolio website whereby new projects built can be added and it has a re
 ![Ademomla-s Portfolio 11-7-2022 5-44-59 AM](https://user-images.githubusercontent.com/96092850/200233621-dc9bb8da-dd08-4110-8964-c6bbff40be8b.png)
 ![Ademomla-s Portfolio 11-7-2022 5-46-00 AM](https://user-images.githubusercontent.com/96092850/200233658-14b9a07e-08a6-479e-988c-0b3d6ccadda7.png)
 
-[click me for the Video Preview](https://ademola-coding.github.io/MY-PORTFOLIO/)
+[click me for the Video Description and Preview](https://ademola-coding.github.io/MY-PORTFOLIO/)
 
 
 ## Built With
