@@ -1,1052 +1,1222 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
-    body {
+  body {
+    position: relative;
+    display: grid;
+    background-color: #161451;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  // the pop-up section
+
+  .the-pop-upD {
+    display: none;
+  }
+
+  .the-pop-up {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.16);
+    height: 100%;
+    border: 2px rgba(213, 204, 204, 0.765) solid;
+    transition: all 1s ease-in-out;
+    z-index: 100;
+    margin: 3%;
+
+    #x-mark {
+      display: flex;
+      flex-direction: row;
+      justify-self: flex-end;
+      color: #fff;
+      margin-top: 4%;
+      margin-right: 4%;
+      font-size: x-large;
+      // background-color: rgba(255, 255, 255, 0.51);
+    }
+
+    .p-topic {
+      position: relative;
+      color: rgb(252, 252, 252);
+      padding: 1% 4%;
+      margin-top: -5%;
+      padding-top: 1%;
+      font-size: 4vh;
+    }
+
+    .snapshoot {
+      display: flex;
+      flex-direction: row;
+      justify-self: center;
+      width: 100%;
+      padding: 1% 4%;
+    }
+
+    .description {
+      position: relative;
+      color: rgba(252, 252, 252, 0.611);
+      padding: 0 4%;
+      text-align: center;
+    }
+
+    .skiil {
+      padding: 0 5%;
+      position: relative;
+      display: flex;
+      margin-top: 10%;
+      height: 40%;
+      margin-left: 5%;
+
+      .vecto {
         position: relative;
-        display: grid;
-        background-color: #161451;
-        margin: 0;
-        box-sizing: content-box;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-    // the pop-up section
-    .the-pop-upD {
-        display: none;
-    }
-    .the-pop-up {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.16);
-        height: 100%;
-        border: 2px rgba(213, 204, 204, 0.765) solid;
-        transition: all 1s ease-in-out;
-        z-index: 100;
-        margin: 3%;
-        #x-mark {
-            display: flex;
-            flex-direction: row;
-            justify-self: flex-end;
-            color: #fff;
-            margin-top: 4%;
-            margin-right: 4%;
-            font-size: x-large;
-            // background-color: rgba(255, 255, 255, 0.51);
-        }
-        .p-topic {
-            position: relative;
-            color: rgb(252, 252, 252);
-            padding: 1% 4%;
-            margin-top: -5%;
-            padding-top: 1%;
-            font-size: 4vh;
-        }
-        .snapshoot {
-            display: flex;
-            flex-direction: row;
-            justify-self: center;
-            width: 100%;
-            padding: 1% 4%;
-        }
-        .description {
-            position: relative;
-            color: rgba(252, 252, 252, 0.611);
-            padding: 0 4%;
-            text-align: center;
-        }
-        .skiil {
-            padding: 0 5%;
-            position: relative;
-            display: flex;
-            margin-top: 10%;
-            height: 40%;
-            margin-left: 5%;
-            .vecto {
-                position: relative;
-                color: rgba(255, 255, 255, 0.51);
-                background-color: rgba(228, 226, 226, 0.51);
-                width: 0.5%;
-                height: 40px;
-                margin: 0 4.5%;
-            }
-        }
-        .btncontainer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 5%;
-            .bt1 {
-                background-color: #9390ff;
-                color: #fff;
-                width: 20%;
-                margin-top: 2%;
-                border: none;
-                margin-left: 5%;
-                font-size: 70%;
-                height: 40px;
-            }
-            .bt2 {
-                background-color: #9390ff;
-                color: #fff;
-                width: 25%;
-                margin-top: 2%;
-                border: none;
-                margin-left: 5%;
-                font-size: 70%;
-                height: 40px;
-            }
-        }
-    }
-    .main-page {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-    .heading-Mob {
-        padding: 20px;
-        position: relative;
-        display: grid;
-    }
-    .heading-Des {
-        display: none;
-    }
-    .logo {
-        grid-column: 1;
-        color: #fff;
-        font-weight: 600;
-        text-decoration: none;
-    }
-    nav {
-        grid-column: 2;
-        margin-left: auto;
-        margin-right: 0;
-    }
-    .hamburger {
-        position: relative;
-        display: block;
-        width: 35px;
-        cursor: pointer;
-        appearance: none;
-        background: none;
-        outline: none;
-        border: none;
-    }
-    .hamburger .bar,
-    .hamburger::after,
-    .hamburger::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 5px;
-        background-color: rgb(255, 255, 255);
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-    .hamburger.is-active::before {
-        transform: rotate(-45deg) translate(-8px, 6px);
-    }
-    .hamburger.is-active::after {
-        transform: rotate(45deg) translate(-9px, -8px);
-    }
-    .hamburger.is-active .bar {
-        opacity: 0;
-    }
-    .pop-up {
-        display: none;
-        .pop-head {
-            grid-row: 1;
-            position: relative;
-            display: grid;
-            background-image: url("/images/pop-background1.png");
-            background-repeat: no-repeat;
-            background-position: left;
-            background-size: contain;
-            height: 150%;
-            background-position-y: bottom;
-            .line-one {
-                position: relative;
-                grid-column: 1;
-                display: grid;
-                margin: 5%;
-                .lo {
-                    grid-column: 1;
-                    color: #191765;
-                }
-                nav {
-                    grid-column: 2;
-                    margin-left: auto;
-                    margin-right: 0;
-                }
-            }
-            .linkss {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                margin: 5%;
-                .each-link {
-                    position: relative;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    width: 100%;
-                    .links {
-                        font-size: 140%;
-                        margin-bottom: 8%;
-                        color: white;
-                        text-decoration: none;
-                    }
-                    i {
-                        margin-top: 2%;
-                        font-size: 140%;
-                        margin-right: 15%;
-                        color: #7f89f3;
-                    }
-                }
-            }
-        }
-        .lor {
-            grid-row: 2;
-            background-image: url("/images/pop-background2.png");
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;
-            height: 2000%;
-        }
-    }
-    .D-nav {
-        display: none;
-    }
-    .intro {
-        color: #7f89f3;
-        text-align: center;
-        font-size: 30px;
-    }
-    .title {
-        color: rgb(211, 202, 202);
-        font-size: 30px;
-        text-align: center;
-        margin-top: 30px;
-    }
-    .about {
-        color: rgb(200, 196, 196);
-        text-align: center;
-        margin: 40px 30px;
-        font-size: 15px;
-        line-height: 25px;
-    }
-    .after-about {
-        position: relative;
-        width: 90%;
-        height: 1.1px;
-        background-color: #3a3837;
-        color: rgb(5, 8, 46);
-        align-items: center;
-        margin-left: 5%;
-    }
-    .languages-skills-frameworks {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-        margin-top: 50px;
-        align-items: center;
-        justify-content: center;
-        left: 10%;
-    }
-    .languages {
-        flex: 1;
-        position: relative;
-    }
-    .skills {
-        flex: 1;
-        position: relative;
-    }
-    .frameworks {
-        flex: 1;
-        position: relative;
-    }
-    .word {
-        color: rgb(202, 205, 205);
-        margin: 10px 0;
-        font-size: 13px;
-    }
-    li {
-        list-style: none;
-    }
-    .group {
-        position: relative;
-        color: #7f89f3;
-        bottom: 10px;
-    }
-    .icon-work {
-        display: flex;
-        flex-direction: column;
-    }
-    .icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 120%;
-        margin: 30px;
-        // size: 150%;
-    }
-    .github-icon {
-        margin: 0 8px;
-    }
-    .linkedIn-icon {
-        margin: 0 8px;
-    }
-    .peace-icon {
-        margin: 0 8px;
-    }
-    .twitter-icon {
-        margin: 0 8px;
-    }
-    .M-icon {
-        margin: 0 8px;
-    }
-    .work-down-arrow-D {
-        display: none;
-    }
-    .work-down-arrow {
-        display: flex;
-        align-self: center;
-        color: rgb(163, 160, 234);
-    }
-    .icon {
-        padding-left: 38%;
-    }
-    .wor {
-        text-align: center;
-        margin-left: 10%;
-    }
-    .title-work {
-        color: #413cc6;
-        font-size: 150%;
-        margin-left: 5%;
-        margin-top: 80px;
-    }
-    .title-work-D {
-        display: none;
-    }
-    .line {
-        position: relative;
-        background-color: rgb(39, 42, 42);
-        height: 1px;
-        width: 90%;
-        color: #3a3837;
-        margin-left: 5%;
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
-    .image {
-        position: relative;
-        background-color: rgb(243, 243, 243);
-        min-height: 150px;
-        min-width: 90%;
-        margin: 10% 5%;
-        border: 1px solid #646369;
-    }
-    h3 {
-        color: white;
-        font-weight: 600;
-        margin-bottom: 8%;
-        margin-left: 5%;
-    }
-    .text {
-        color: rgb(227, 223, 223);
-        font-size: 103%;
-        margin-right: 5%;
-        line-height: 125%;
-        margin-left: 5%;
-    }
-    .skil {
-        position: relative;
-        display: flex;
-        margin-top: 10%;
-        height: 40%;
-        margin-left: 5%;
-    }
-    .vector {
-        position: relative;
-        color: rgb(3, 3, 104);
-        background-color: #3a3837;
+        color: rgba(255, 255, 255, 0.51);
+        background-color: rgba(228, 226, 226, 0.51);
         width: 0.5%;
         height: 40px;
-        margin-left: 5%;
+        margin: 0 4.5%;
+      }
     }
-    .skill {
-        position: relative;
-        color: rgb(221, 219, 219);
-        list-style: none;
-        margin: 1% 4%;
-        text-align: center;
-        margin-left: 5%;
-    }
-    .work1-D {
-        display: none;
-    }
-    .work2-D {
-        display: none;
-    }
-    .work-M {
-        display: grid;
-        grid-row: 2;
-        background-image: url("Ellipse19@2x.png");
-    }
-    .btn {
+
+    .btncontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5%;
+
+      .bt1 {
         background-color: #9390ff;
         color: #fff;
-        width: 25%;
-        margin-top: 10%;
+        width: 20%;
+        margin-top: 2%;
         border: none;
         margin-left: 5%;
         font-size: 70%;
         height: 40px;
+      }
+
+      .bt2 {
+        background-color: #9390ff;
+        color: #fff;
+        width: 25%;
+        margin-top: 2%;
+        border: none;
+        margin-left: 5%;
+        font-size: 70%;
+        height: 40px;
+      }
     }
-    .footer {
+  }
+
+  .main-page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .heading-Mob {
+    padding: 20px;
+    position: relative;
+    display: grid;
+  }
+
+  .heading-Des {
+    display: none;
+  }
+
+  .logo {
+    grid-column: 1;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  nav {
+    grid-column: 2;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger .bar,
+  .hamburger::after,
+  .hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .pop-up {
+    display: none;
+
+    .pop-head {
+      grid-row: 1;
+      position: relative;
+      display: grid;
+      background-image: url("/images/pop-background1.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      height: 150%;
+      background-position-y: bottom;
+
+      .line-one {
+        position: relative;
+        grid-column: 1;
         display: grid;
-    }
-    .contact-M {
-        display: grid;
-        margin-top: 30px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-    .contact-D {
-        display: none;
-    }
-    .conta {
-        color: #9390ff;
-        text-align: center;
-        margin-left: -5%;
-        margin-top: 15%;
-        font-size: 200%;
-    }
-    .cont-text {
-        color: rgb(227, 223, 223);
-        font-size: 103%;
-        margin: 10%;
-        line-height: 125%;
-        text-align: center;
-    }
-    form {
+        margin: 5%;
+
+        .lo {
+          grid-column: 1;
+          color: #191765;
+        }
+
+        nav {
+          grid-column: 2;
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+
+      .linkss {
         display: flex;
         flex-direction: column;
-        padding: 5%;
-    }
-     ::-webkit-input-placeholder {
-        color: #3a3837;
-        opacity: 1;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-     :-ms-input-placeholder {
-        color: #3a3837;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-    input:focus,
-    textarea:focus {
-        color: #191765;
-        font-size: 17px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-    #name {
-        width: 90%;
-        height: 30px;
-        margin-left: 5%;
-        margin-bottom: 5%;
-        font-size: 17px;
-    }
-    #mail {
-        margin-left: 5%;
-        margin-bottom: 5%;
-        width: 90%;
-        height: 30px;
-        font-size: 17px;
-    }
-    #msg {
-        margin-left: 5%;
-        margin-bottom: 5%;
-        width: 90%;
-        font-size: 17px;
-    }
-    #bttn {
-        background-color: #9390ff;
-        color: #fff;
-        position: relative;
-        width: 25%;
-        margin-top: 10%;
-        border: none;
-        margin-left: 38%;
-        font-size: 70%;
-        height: 40px;
-    }
-    .cont-line {
-        position: relative;
-        background-color: rgb(39, 42, 42);
-        height: 2px;
         width: 100%;
-        margin-top: 15%;
+        margin: 5%;
+
+        .each-link {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+
+          .links {
+            font-size: 140%;
+            margin-bottom: 8%;
+            color: white;
+            text-decoration: none;
+          }
+
+          i {
+            margin-top: 2%;
+            font-size: 140%;
+            margin-right: 15%;
+            color: #7f89f3;
+          }
+        }
+      }
     }
-    .icons-M {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        list-style: none;
-        margin-top: 10px;
+
+    .lor {
+      grid-row: 2;
+      background-image: url("/images/pop-background2.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      height: 2000%;
     }
-    .my-mail {
-        color: white;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
-    .feet {
-        display: none;
-    }
+  }
+
+  .D-nav {
+    display: none;
+  }
+
+  .intro {
+    color: #7f89f3;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .title {
+    color: rgb(211, 202, 202);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .about {
+    color: rgb(200, 196, 196);
+    text-align: center;
+    margin: 40px 30px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .after-about {
+    position: relative;
+    width: 90%;
+    height: 1.1px;
+    background-color: #3a3837;
+    color: rgb(5, 8, 46);
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .languages-skills-frameworks {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    left: 10%;
+  }
+
+  .languages {
+    flex: 1;
+    position: relative;
+  }
+
+  .skills {
+    flex: 1;
+    position: relative;
+  }
+
+  .frameworks {
+    flex: 1;
+    position: relative;
+  }
+
+  .word {
+    color: rgb(202, 205, 205);
+    margin: 10px 0;
+    font-size: 13px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .group {
+    position: relative;
+    color: #7f89f3;
+    bottom: 10px;
+  }
+
+  .icon-work {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 120%;
+    margin: 30px;
+    // size: 150%;
+  }
+
+  .github-icon {
+    margin: 0 8px;
+  }
+
+  .linkedIn-icon {
+    margin: 0 8px;
+  }
+
+  .peace-icon {
+    margin: 0 8px;
+  }
+
+  .twitter-icon {
+    margin: 0 8px;
+  }
+
+  .M-icon {
+    margin: 0 8px;
+  }
+
+  .work-down-arrow-D {
+    display: none;
+  }
+
+  .work-down-arrow {
+    display: flex;
+    align-self: center;
+    color: rgb(163, 160, 234);
+  }
+
+  .icon {
+    padding-left: 38%;
+  }
+
+  .wor {
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  .title-work {
+    color: #413cc6;
+    font-size: 150%;
+    margin-left: 5%;
+    margin-top: 80px;
+  }
+
+  .title-work-D {
+    display: none;
+  }
+
+  .line {
+    position: relative;
+    background-color: rgb(39, 42, 42);
+    height: 1px;
+    width: 90%;
+    color: #3a3837;
+    margin-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    position: relative;
+    background-color: rgb(243, 243, 243);
+    min-height: 150px;
+    min-width: 90%;
+    margin: 10% 5%;
+    border: 1px solid #646369;
+  }
+
+  h3 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8%;
+    margin-left: 5%;
+  }
+
+  .text {
+    color: rgb(227, 223, 223);
+    font-size: 103%;
+    margin-right: 5%;
+    line-height: 125%;
+    margin-left: 5%;
+  }
+
+  .skil {
+    position: relative;
+    display: flex;
+    margin-top: 10%;
+    height: 40%;
+    margin-left: 5%;
+  }
+
+  .vector {
+    position: relative;
+    color: rgb(3, 3, 104);
+    background-color: #3a3837;
+    width: 0.5%;
+    height: 40px;
+    margin-left: 5%;
+  }
+
+  .skill {
+    position: relative;
+    color: rgb(221, 219, 219);
+    list-style: none;
+    margin: 1% 4%;
+    text-align: center;
+    margin-left: 5%;
+  }
+
+  .work1-D {
+    display: none;
+  }
+
+  .work2-D {
+    display: none;
+  }
+
+  .work-M {
+    display: grid;
+    grid-row: 2;
+    background-image: url("Ellipse19@2x.png");
+  }
+
+  .btn {
+    background-color: #9390ff;
+    color: #fff;
+    width: 25%;
+    margin-top: 10%;
+    border: none;
+    margin-left: 5%;
+    font-size: 70%;
+    height: 40px;
+  }
+
+  .footer {
+    display: grid;
+  }
+
+  .contact-M {
+    display: grid;
+    margin-top: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .contact-D {
+    display: none;
+  }
+
+  .conta {
+    color: #9390ff;
+    text-align: center;
+    margin-left: -5%;
+    margin-top: 15%;
+    font-size: 200%;
+  }
+
+  .cont-text {
+    color: rgb(227, 223, 223);
+    font-size: 103%;
+    margin: 10%;
+    line-height: 125%;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #3a3837;
+    opacity: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  :-ms-input-placeholder {
+    color: #3a3837;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  input:focus,
+  textarea:focus {
+    color: #191765;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  #name {
+    width: 90%;
+    height: 30px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 17px;
+  }
+
+  #mail {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    height: 30px;
+    font-size: 17px;
+  }
+
+  #msg {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    font-size: 17px;
+  }
+
+  #bttn {
+    background-color: #9390ff;
+    color: #fff;
+    position: relative;
+    width: 25%;
+    margin-top: 10%;
+    border: none;
+    margin-left: 38%;
+    font-size: 70%;
+    height: 40px;
+  }
+
+  .cont-line {
+    position: relative;
+    background-color: rgb(39, 42, 42);
+    height: 2px;
+    width: 100%;
+    margin-top: 15%;
+  }
+
+  .icons-M {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    list-style: none;
+    margin-top: 10px;
+  }
+
+  .my-mail {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .feet {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        position: relative;
-        display: grid;
-        background-color: #191765;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  body {
+    position: relative;
+    display: grid;
+    background-color: #191765;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  // the pop-up section  Desktop
+
+  .the-pop-up {
+    display: none;
+  }
+
+  .the-pop-upD {
+    display: none;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border: 2px rgba(213, 204, 204, 0.765) solid;
+    transition: all 1s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.285);
+    margin: 0.6% 10%;
+
+    #x-markD {
+      display: flex;
+      flex-direction: row;
+      justify-self: flex-end;
+      color: #fff;
+      margin-top: 0.5%;
+      margin-right: 4%;
+      font-size: x-large;
     }
-    // the pop-up section  Desktop
-    .the-pop-up {
-        display: none;
+
+    .p-topicD {
+      position: relative;
+      color: rgb(252, 252, 252);
+      padding: 0 4%;
+      font-size: 3vh;
     }
-    .the-pop-upD {
-        display: none;
-        position: fixed;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        border: 2px rgba(213, 204, 204, 0.765) solid;
-        transition: all 1s ease-in-out;
-        background-color: rgba(255, 255, 255, 0.285);
-        margin: 0.6% 10%;
-        #x-markD {
-            display: flex;
-            flex-direction: row;
-            justify-self: flex-end;
-            color: #fff;
-            margin-top: 0.5%;
-            margin-right: 4%;
-            font-size: x-large;
-        }
-        .p-topicD {
-            position: relative;
-            color: rgb(252, 252, 252);
-            padding: 0 4%;
-            font-size: 3vh;
-        }
-        .snapshootD {
-            display: flex;
-            flex-direction: row;
-            justify-self: center;
-            width: 100%;
-            height: 80%;
-            padding-top: 0.5%;
-            padding-left: 4%;
-            padding-right: 4%;
-        }
-        .backgimage {
-            position: absolute;
-            left: -10%;
-            top: 5%;
-            z-index: -100;
-            filter: blur(20px) brightness(90%);
-            img {
-                height: 50%;
-                width: 50%;
-            }
-        }
-        .backgimg {
-            position: absolute;
-            right: -30%;
-            top: 40%;
-            left: auto;
-            z-index: -100;
-            filter: blur(20px) brightness(90%);
-            img {
-                height: 50%;
-                width: 50%;
-            }
-        }
-        .descriptionD {
-            position: relative;
-            color: rgba(252, 252, 252, 0.611);
-            padding: 0 4%;
-            text-align: center;
-            margin-top: -8.3%;
-            margin-left: 20%;
-            margin-right: 20%;
-            font-size: 2vh;
-        }
-        .skillingD {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #fff;
-            .skiil2 {
-                position: relative;
-                display: flex;
-                margin-top: 0.5%;
-                height: 30%;
-                width: 44%;
-                .vecto2 {
-                    position: relative;
-                    color: rgba(255, 255, 255, 0.51);
-                    background-color: rgba(228, 226, 226, 0.51);
-                    width: 0.5%;
-                    height: 30px;
-                    margin: 0 6%;
-                }
-            }
-        }
-        .btncontainerD {
-            display: flex;
-            flex-direction: row;
-            justify-items: center;
-            margin-bottom: 0;
-            margin-left: 30%;
-            margin-top: 0.5%;
-            .bt1D {
-                background-color: #9390ff;
-                color: #fff;
-                width: 20%;
-                margin-top: 0.5%;
-                border: none;
-                margin-left: 5%;
-                font-size: 70%;
-                height: 40px;
-            }
-            .bt2D {
-                background-color: #9390ff;
-                color: #fff;
-                width: 25%;
-                margin-top: 0.5%;
-                border: none;
-                margin-left: 5%;
-                font-size: 70%;
-                height: 40px;
-            }
-        }
+
+    .snapshootD {
+      display: flex;
+      flex-direction: row;
+      justify-self: center;
+      width: 100%;
+      height: 80%;
+      padding-top: 0.5%;
+      padding-left: 4%;
+      padding-right: 4%;
     }
-    .main-page {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+    .backgimage {
+      position: absolute;
+      left: -10%;
+      top: 5%;
+      z-index: -100;
+      filter: blur(20px) brightness(90%);
+
+      img {
+        height: 50%;
+        width: 50%;
+      }
     }
-    #pops {
-        display: none;
+
+    .backgimg {
+      position: absolute;
+      right: -30%;
+      top: 40%;
+      left: auto;
+      z-index: -100;
+      filter: blur(20px) brightness(90%);
+
+      img {
+        height: 50%;
+        width: 50%;
+      }
     }
-    .heading-Des {
-        display: grid;
-        position: relative;
-        padding: 1% 10%;
+
+    .descriptionD {
+      position: relative;
+      color: rgba(252, 252, 252, 0.611);
+      padding: 0 4%;
+      text-align: center;
+      margin-top: -8.3%;
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 2vh;
     }
-    .heading-Mob {
-        display: none;
-    }
-    .logo {
-        display: none;
-    }
-    .logo-D {
-        grid-column: 1;
-        color: aliceblue;
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 120%;
-    }
-    nav {
-        display: none;
-        color: rgb(255, 255, 255);
-        margin-left: auto;
-        margin-right: 0;
-    }
-    .D-nav {
-        grid-column: 2;
-        position: relative;
-        margin-left: auto;
-    }
-    .D-portfolio,
-    .D-about,
-    .D-contact,
-    .D-envelop {
-        margin: 0 8px;
-        color: rgb(241, 248, 253);
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 120%;
-    }
-    .heading-liner {
-        display: flex;
-        flex-direction: column;
-        background-image: url(/images/left-skills.png);
-    }
-    .intro {
-        color: #7f89f3;
-        text-align: center;
-        font-size: 500%;
-        font-weight: 500;
-        margin-top: 10%;
-        margin-bottom: 3%;
-    }
-    .title {
-        color: rgb(211, 202, 202);
-        font-size: 400%;
-        font-weight: 500;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .about {
-        color: rgb(200, 196, 196);
-        text-align: center;
-        margin: 150px 30%;
-        font-size: 200%;
-        font-weight: 300;
-        line-height: 40px;
-    }
-    .after-about {
-        display: flex;
-        flex-direction: row;
-        align-self: center;
-        margin: 0 25%;
-        height: 1.1px;
-        background-color: #3a3837;
-        color: rgb(5, 8, 46);
-    }
-    .languages-skills-frameworks {
+
+    .skillingD {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+
+      .skiil2 {
         position: relative;
         display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: center;
-        margin-top: 4%;
-        margin-bottom: 4%;
-        margin-left: 20%;
-        margin-right: 23%;
-        background-image: url("Ellipse 19.png");
-        background-repeat: no-repeat;
-        background-position: right;
+        margin-top: 0.5%;
+        height: 30%;
+        width: 44%;
+
+        .vecto2 {
+          position: relative;
+          color: rgba(255, 255, 255, 0.51);
+          background-color: rgba(228, 226, 226, 0.51);
+          width: 0.5%;
+          height: 30px;
+          margin: 0 6%;
+        }
+      }
     }
-    .languages {
-        flex: 1;
-        position: relative;
-        font-size: 110%;
-        margin: 0 10%;
-    }
-    .skills {
-        flex: 1;
-        position: relative;
-        font-size: 110%;
-        margin: 0 10%;
-    }
-    .frameworks {
-        flex: 1;
-        position: relative;
-        font-size: 110%;
-        margin: 0 10%;
-    }
-    .word {
-        color: rgb(202, 205, 205);
-        margin: 10px 10%;
-        font-size: 110%;
-    }
-    li {
-        list-style: none;
-    }
-    .group {
-        position: relative;
-        color: #7f89f3;
-        bottom: 10px;
-    }
-    .icon-work {
-        display: none;
-        flex-direction: column;
-    }
-    .github-icon {
-        grid-column: 1;
-        margin: 0 8px;
-        font-size: 30px;
-    }
-    .linkedIn-icon {
-        grid-column: 2;
-        margin: 0 8px;
-        font-size: 30px;
-    }
-    .peace-icon {
-        grid-column: 3;
-        margin: 0 8px;
-        font-size: 30px;
-    }
-    .twitter-icon {
-        grid-column: 4;
-        margin: 0 8px;
-        font-size: 30px;
-    }
-    .M-icon {
-        grid-column: 5;
-        margin: 0 8px;
-        font-size: 30px;
-    }
-    .work-down-arrow {
-        display: none;
-    }
-    .work-down-arrow-D {
-        display: grid;
-        width: 100%;
-        align-items: center;
-        justify-items: center;
-        margin: 5% 0;
-        color: azure;
-    }
-    .icon1 {
-        margin-left: 5%;
-        font-size: 20px;
-        color: rgb(152, 156, 160);
-    }
-    .wor1 {
-        font-weight: 300;
-        font-size: 20px;
-    }
-    .wor-icon1 {
-        grid-column: 1;
-        display: flex;
-        flex-direction: row;
-    }
-    .icons {
-        grid-column: 2;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: white;
-        list-style: none;
-        font-size: 30px;
-    }
-    .wor-icon2 {
-        grid-column: 3;
-        display: flex;
-        flex-direction: row;
-    }
-    .wor2 {
-        margin-left: 34%;
-        font-weight: 300;
-        font-size: 20px;
-    }
-    .icon2 {
-        font-size: 20px;
-        color: rgb(152, 156, 160);
-    }
-    .title-work {
-        display: none;
-    }
-    .title-work-D {
-        color: #7f89f3;
-        font-size: 300%;
-        margin-left: 5%;
-        margin-top: 80px;
-    }
-    .line {
-        position: relative;
-        background-color: #3a3837;
-        height: 1px;
-        width: 90%;
-        color: rgb(3, 3, 104);
-        margin-left: 5%;
-        margin-top: 40px;
-        margin-bottom: 10px;
-    }
-    .work {
-        display: grid;
-    }
-    .work-M {
-        display: none;
-    }
-    .work1-D {
-        display: flex;
-        flex-direction: row;
-        background-image: url("Ellipse19@2x.png");
-        margin: 8% 0;
-    }
-    .image {
-        background-color: rgb(255, 255, 255);
-        height: 119%;
-        margin-left: 5%;
-        width: 300%;
-    }
-    .story-D {
-        margin-left: 1%;
-    }
-    .work2-D {
-        display: flex;
-        flex-direction: row;
-        background-image: url("Ellipse19@2x.png");
-        margin: 8% 0;
-    }
-    .image2 {
-        order: 2;
-        background-color: rgb(255, 255, 255);
-        height: 119%;
-        margin-left: 1%;
-        margin-right: 5%;
-        width: 300%;
-    }
-    .story-D-2 {
-        order: 1;
-        margin-left: 5%;
-    }
-    .btn {
+
+    .btncontainerD {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      margin-bottom: 0;
+      margin-left: 30%;
+      margin-top: 0.5%;
+
+      .bt1D {
         background-color: #9390ff;
         color: #fff;
-        width: 25%;
-        margin-top: 1%;
+        width: 20%;
+        margin-top: 0.5%;
         border: none;
-        margin-left: 0;
+        margin-left: 5%;
         font-size: 70%;
         height: 40px;
-    }
-    h3 {
-        color: white;
-        font-size: 40px;
-        font-weight: 600;
-        margin-bottom: 8%;
-        margin-top: 20%;
-    }
-    .text {
-        color: rgb(227, 223, 223);
-        font-size: 120%;
-        margin-right: 5%;
-        line-height: 125%;
-        margin-left: 0;
-    }
-    .vector {
-        position: relative;
-        color: rgb(3, 3, 104);
-        background-color: #3a3837;
-        width: 0.5%;
-        height: 45px;
-        margin: 0 2%;
-    }
-    .skill {
-        position: relative;
-        display: flex;
-        color: rgb(221, 219, 219);
-        font-size: 20px;
-        font-weight: 500;
-        list-style: none;
-        margin: 1% 3%;
-        text-align: center;
-    }
-    .footer {
-        display: grid;
-    }
-    .contact-M {
-        display: none;
-    }
-    .contact-D {
-        display: grid;
-        margin-top: 10%;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-    .conta {
-        color: #9390ff;
-        grid-row: 1;
-        text-align: center;
-        margin-left: -5%;
-        font-size: 200%;
-    }
-    .cont-text {
-        color: rgb(227, 223, 223);
-        font-size: 103%;
-        margin: 5% 22.5%;
-        line-height: 125%;
-        text-align: center;
-        grid-row: 2;
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        padding: 5%;
-        grid-row: 3;
-        margin: 0 15%;
-    }
-     ::-webkit-input-placeholder {
-        color: #3a3837;
-        opacity: 1;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-     :-ms-input-placeholder {
-        color: #3a3837;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-    input:focus,
-    textarea:focus {
-        color: #191765;
-        font-size: 17px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
-    #name-D {
-        margin-left: 5%;
-        margin-bottom: 5%;
-        width: 90%;
-        height: 40px;
-        font-size: 17px;
-    }
-    #mail-D {
-        margin-left: 5%;
-        margin-bottom: 5%;
-        width: 90%;
-        height: 40px;
-        font-size: 17px;
-    }
-    #msg-D {
-        margin-left: 5%;
-        margin-bottom: 5%;
-        width: 90%;
-        font-size: 17px;
-    }
-    #bttn-D {
+      }
+
+      .bt2D {
         background-color: #9390ff;
         color: #fff;
-        position: relative;
         width: 25%;
-        margin-top: 10%;
+        margin-top: 0.5%;
         border: none;
-        margin-left: 38%;
-        font-size: 90%;
+        margin-left: 5%;
+        font-size: 70%;
         height: 40px;
+      }
     }
-    .cont-line {
-        grid-row: 4;
-        position: relative;
-        background-color: #3a3837;
-        height: 2px;
-        width: 100%;
-        margin-top: 0;
-    }
-    .feet {
-        display: grid;
-        margin: 2% 0;
-    }
-    .my-mail {
-        color: white;
-        margin-left: 1%;
-        font-size: 20px;
-    }
+  }
+
+  .main-page {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  #pops {
+    display: none;
+  }
+
+  .heading-Des {
+    display: grid;
+    position: relative;
+    padding: 1% 10%;
+  }
+
+  .heading-Mob {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-D {
+    grid-column: 1;
+    color: aliceblue;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 120%;
+  }
+
+  nav {
+    display: none;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .D-nav {
+    grid-column: 2;
+    position: relative;
+    margin-left: auto;
+  }
+
+  .D-portfolio,
+  .D-about,
+  .D-contact,
+  .D-envelop {
+    margin: 0 8px;
+    color: rgb(241, 248, 253);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 120%;
+  }
+
+  .heading-liner {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/left-skills.png);
+  }
+
+  .intro {
+    color: #7f89f3;
+    text-align: center;
+    font-size: 500%;
+    font-weight: 500;
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+
+  .title {
+    color: rgb(211, 202, 202);
+    font-size: 400%;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about {
+    color: rgb(200, 196, 196);
+    text-align: center;
+    margin: 150px 30%;
+    font-size: 200%;
+    font-weight: 300;
+    line-height: 40px;
+  }
+
+  .after-about {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin: 0 25%;
+    height: 1.1px;
+    background-color: #3a3837;
+    color: rgb(5, 8, 46);
+  }
+
+  .languages-skills-frameworks {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 20%;
+    margin-right: 23%;
+    background-image: url("Ellipse 19.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .languages {
+    flex: 1;
+    position: relative;
+    font-size: 110%;
+    margin: 0 10%;
+  }
+
+  .skills {
+    flex: 1;
+    position: relative;
+    font-size: 110%;
+    margin: 0 10%;
+  }
+
+  .frameworks {
+    flex: 1;
+    position: relative;
+    font-size: 110%;
+    margin: 0 10%;
+  }
+
+  .word {
+    color: rgb(202, 205, 205);
+    margin: 10px 10%;
+    font-size: 110%;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .group {
+    position: relative;
+    color: #7f89f3;
+    bottom: 10px;
+  }
+
+  .icon-work {
+    display: none;
+    flex-direction: column;
+  }
+
+  .github-icon {
+    grid-column: 1;
+    margin: 0 8px;
+    font-size: 30px;
+  }
+
+  .linkedIn-icon {
+    grid-column: 2;
+    margin: 0 8px;
+    font-size: 30px;
+  }
+
+  .peace-icon {
+    grid-column: 3;
+    margin: 0 8px;
+    font-size: 30px;
+  }
+
+  .twitter-icon {
+    grid-column: 4;
+    margin: 0 8px;
+    font-size: 30px;
+  }
+
+  .M-icon {
+    grid-column: 5;
+    margin: 0 8px;
+    font-size: 30px;
+  }
+
+  .work-down-arrow {
+    display: none;
+  }
+
+  .work-down-arrow-D {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    margin: 5% 0;
+    color: azure;
+  }
+
+  .icon1 {
+    margin-left: 5%;
+    font-size: 20px;
+    color: rgb(152, 156, 160);
+  }
+
+  .wor1 {
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .wor-icon1 {
+    grid-column: 1;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .icons {
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    list-style: none;
+    font-size: 30px;
+  }
+
+  .wor-icon2 {
+    grid-column: 3;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wor2 {
+    margin-left: 34%;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .icon2 {
+    font-size: 20px;
+    color: rgb(152, 156, 160);
+  }
+
+  .title-work {
+    display: none;
+  }
+
+  .title-work-D {
+    color: #7f89f3;
+    font-size: 300%;
+    margin-left: 5%;
+    margin-top: 80px;
+  }
+
+  .line {
+    position: relative;
+    background-color: #3a3837;
+    height: 1px;
+    width: 90%;
+    color: rgb(3, 3, 104);
+    margin-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .work {
+    display: grid;
+  }
+
+  .work-M {
+    display: none;
+  }
+
+  .work1-D {
+    display: flex;
+    flex-direction: row;
+    background-image: url("Ellipse19@2x.png");
+    margin: 8% 0;
+  }
+
+  .image {
+    background-color: rgb(255, 255, 255);
+    height: 119%;
+    margin-left: 5%;
+    width: 300%;
+  }
+
+  .story-D {
+    margin-left: 1%;
+  }
+
+  .work2-D {
+    display: flex;
+    flex-direction: row;
+    background-image: url("Ellipse19@2x.png");
+    margin: 8% 0;
+  }
+
+  .image2 {
+    order: 2;
+    background-color: rgb(255, 255, 255);
+    height: 119%;
+    margin-left: 1%;
+    margin-right: 5%;
+    width: 300%;
+  }
+
+  .story-D-2 {
+    order: 1;
+    margin-left: 5%;
+  }
+
+  .btn {
+    background-color: #9390ff;
+    color: #fff;
+    width: 25%;
+    margin-top: 1%;
+    border: none;
+    margin-left: 0;
+    font-size: 70%;
+    height: 40px;
+  }
+
+  h3 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 8%;
+    margin-top: 20%;
+  }
+
+  .text {
+    color: rgb(227, 223, 223);
+    font-size: 120%;
+    margin-right: 5%;
+    line-height: 125%;
+    margin-left: 0;
+  }
+
+  .vector {
+    position: relative;
+    color: rgb(3, 3, 104);
+    background-color: #3a3837;
+    width: 0.5%;
+    height: 45px;
+    margin: 0 2%;
+  }
+
+  .skill {
+    position: relative;
+    display: flex;
+    color: rgb(221, 219, 219);
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+    margin: 1% 3%;
+    text-align: center;
+  }
+
+  .footer {
+    display: grid;
+  }
+
+  .contact-M {
+    display: none;
+  }
+
+  .contact-D {
+    display: grid;
+    margin-top: 10%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .conta {
+    color: #9390ff;
+    grid-row: 1;
+    text-align: center;
+    margin-left: -5%;
+    font-size: 200%;
+  }
+
+  .cont-text {
+    color: rgb(227, 223, 223);
+    font-size: 103%;
+    margin: 5% 22.5%;
+    line-height: 125%;
+    text-align: center;
+    grid-row: 2;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    grid-row: 3;
+    margin: 0 15%;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #3a3837;
+    opacity: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  :-ms-input-placeholder {
+    color: #3a3837;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  input:focus,
+  textarea:focus {
+    color: #191765;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  #name-D {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    height: 40px;
+    font-size: 17px;
+  }
+
+  #mail-D {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    height: 40px;
+    font-size: 17px;
+  }
+
+  #msg-D {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    font-size: 17px;
+  }
+
+  #bttn-D {
+    background-color: #9390ff;
+    color: #fff;
+    position: relative;
+    width: 25%;
+    margin-top: 10%;
+    border: none;
+    margin-left: 38%;
+    font-size: 90%;
+    height: 40px;
+  }
+
+  .cont-line {
+    grid-row: 4;
+    position: relative;
+    background-color: #3a3837;
+    height: 2px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .feet {
+    display: grid;
+    margin: 2% 0;
+  }
+
+  .my-mail {
+    color: white;
+    margin-left: 1%;
+    font-size: 20px;
+  }
 }
 
 //btn span
 span.errmsg,
 span.errmsgD {
-    display: flex;
-    color: #d91f0e;
-    align-self: center;
+  display: flex;
+  color: #d91f0e;
+  align-self: center;
 }
