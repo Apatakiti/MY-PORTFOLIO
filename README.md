@@ -1,3 +1,7 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+
+# Validation Contact
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -16,7 +20,6 @@
 
 [Live Demo Link](https://ademola-coding.github.io/MY-PORTFOLIO/)
 
-
 ## Author
 
 👤 **Ademola Owoeye**
@@ -32,6 +35,7 @@
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
+
 
 ## Show your support
 
