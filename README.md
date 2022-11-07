@@ -1,33 +1,51 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-
-# Validation Contact
-
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# A Portfolio Project
+# PORTFOLIO WEBSITE
 
 > Description the project.
+
+This a portfolio website whereby new projects built can be added and it has a responsive feature, built with HTML, CSS and Javascript.
+
+[click me for the Video Preview](https://ademola-coding.github.io/MY-PORTFOLIO/)
 
 
 ## Built With
 
 - HTML
 - CSS
+- JavaScript
 
 
 ## Live Demo 
 
 [Live Demo Link](https://ademola-coding.github.io/MY-PORTFOLIO/)
 
-## Author
+## Getting Started
+
+you can have a copy of this project by cloning this repo to your local machine
+`https://github.com/Ademola-coding/MY-PORTFOLIO.git`
+
+## procedure
+- open git bash
+- git mkdir Portfolio
+- cd Portfolio
+- git clone ` https://github.com/Ademola-coding/MY-PORTFOLIO.git `
+- code .
+ 
+with the steps above, you can have a copy of the project 
+
+## Authors
 
 👤 **Ademola Owoeye**
-
 
 - GitHub: [@Ademola-coding](https://github.com/Ademola-coding)
 - Twitter: [@Steady1700](https://twitter.com/steady1700)
 - LinkedIn: [Ademola Owoeye](https://www.linkedin.com/in/ademola-owoeye-0bb344223/)
+
+
+👤 **Getie Kumilechew**
+
+- GitHub: [@Ademola-coding](https://github.com/Ademola-coding)
 
 
 ## 🤝 Contributing
@@ -43,6 +61,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Thanks to Microverse for the User Interface Design
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
@@ -50,8 +69,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-
-
-### Live Demo
-https://ademola-coding.github.io/MY-PORTFOLIO/
-
